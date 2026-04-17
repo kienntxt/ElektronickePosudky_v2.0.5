@@ -1,0 +1,14 @@
+﻿**/.vs
+**/.vscode
+
+**/bin
+**/obj
+
+# Environment variables (sensitive data)
+.env
+.env.local
+.env.*.local
+
+# Docker volumes and logs
+**/logs/
+**/sqlserver_data/

@@ -1,0 +1,24 @@
+﻿# Dockerfile for Database Migration
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS base
+WORKDIR /src
+
+# Copy project files for restore
+COPY ["src/ElektronickePosudky.API/ElektronickePosudky.API.csproj", "ElektronickePosudky.API/"]
+COPY ["src/ElektronickePosudky.Application/ElektronickePosudky.Application.csproj", "ElektronickePosudky.Application/"]
+COPY ["src/ElektronickePosudky.Domain/ElektronickePosudky.Domain.csproj", "ElektronickePosudky.Domain/"]
+COPY ["src/ElektronickePosudky.Infrastructure/ElektronickePosudky.Infrastructure.csproj", "ElektronickePosudky.Infrastructure/"]
+
+# Restore dependencies
+RUN dotnet restore "ElektronickePosudky.API/ElektronickePosudky.API.csproj"
+
+# Copy all source code
+COPY src/ .
+
+# Install EF Core tools
+RUN dotnet tool install --global dotnet-ef --version 8.0.15
+
+# Set PATH for global tools
+ENV PATH="$PATH:/root/.dotnet/tools"
+
+# Run database migration
+CMD ["dotnet", "ef", "database", "update", "--project", "ElektronickePosudky.API/ElektronickePosudky.API.csproj", "--startup-project", "ElektronickePosudky.API/ElektronickePosudky.API.csproj"]

@@ -1,0 +1,52 @@
+﻿# Git
+.git
+.gitignore
+.gitattributes
+
+# Visual Studio
+.vs
+.vscode
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln
+
+# Build results
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+
+# NuGet
+*.nupkg
+.nuget/
+
+# IDE
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.nyc_output
+coverage
+
+# Documentation
+docs/
+*.md
+
+# init
+init/
+
+# Node (if any frontend build)
+node_modules/
+dist/
+
+# Environment files
+.env
+.env.local
+
+# Logs (local)
+**/logs/
+*.log
