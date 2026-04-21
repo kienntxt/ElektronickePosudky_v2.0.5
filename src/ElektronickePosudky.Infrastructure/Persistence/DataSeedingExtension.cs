@@ -1,4 +1,5 @@
 ﻿using ElektronickePosudky.Domain.Entities;
+using ElektronickePosudky.Infrastructure.Utils;
 using Microsoft.EntityFrameworkCore;
 
 namespace ElektronickePosudky.Infrastructure.Persistence
@@ -14,1109 +15,96 @@ namespace ElektronickePosudky.Infrastructure.Persistence
             var codebookItems = new List<CiselnikPolozka>();
             var translations = new List<Translation>();
 
-            // 1. PosudekRo Status (STAV-RO)
-            var stavRoCiselnik = new Ciselnik
-            {
-                Id = Guid.Parse("a14bffda-1149-4ec5-b79d-cdda839259c1"),
-                Kod = "STAV-RO",
-                Verze = "1",
-                PlatnostOd = now.AddYears(-1),
-                Termx = false,
-            };
-            codebooks.Add(stavRoCiselnik);
+            /*---------------------------------------------------
+            - Load seeding data from specific json files (saved from https://terminologie.ezdravi.gov.cz/resources/value-sets)
+            ---------------------------------------------------
+            elp-ro-akce.json
+            elp-ro-druh-posudku.json
+            elp-ro-druh-prohlidky.json
+            elp-ro-harmonizovane-kody.json
+            elp-ro-narodni-kody.json
+            elp-ro-seznam-skupin.json
+            elp-ro-stav-posudku.json
+            elp-ro-vysledek-posudku.json
+            elp-ro-zadatel-skupina.json
+            ---------------------------------------------------*/
 
-            var platnyItem = new CiselnikPolozka
-            {
-                Id = Guid.Parse("91c091e9-2d8a-454a-952e-61a37a6daa0c"),
-                CiselnikId = stavRoCiselnik.Id,
-                Kod = "PLATNY",
-                Verze = "1",
-                CiselnikKod = stavRoCiselnik.Kod,
-                CiselnikVerze = stavRoCiselnik.Verze,
-            };
-            codebookItems.Add(platnyItem);
-
-            var zneplatnenyItem = new CiselnikPolozka
-            {
-                Id = Guid.Parse("06cefa04-8612-4dcf-b196-46d435f1718b"),
-                CiselnikId = stavRoCiselnik.Id,
-                Kod = "ZNEPLATNENY",
-                Verze = "1",
-                CiselnikKod = stavRoCiselnik.Kod,
-                CiselnikVerze = stavRoCiselnik.Verze,
-            };
-            codebookItems.Add(zneplatnenyItem);
-
-            translations.AddRange(
-                new[]
-                {
-                    // STAV-RO Ciselnik
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = stavRoCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Stav posudku",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = stavRoCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Stav lékařského posudku",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = stavRoCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Certificate status",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = stavRoCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "State of the medical certificate",
-                    },
-                    // PLATNY Item
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = platnyItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Platný",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = platnyItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Posudek je platný.",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = platnyItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Valid",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = platnyItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "The certificate is valid.",
-                    },
-                    // ZNEPLATNENY Item
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = zneplatnenyItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Zneplatněný",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = zneplatnenyItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Posudek byl zneplatněn.",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = zneplatnenyItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Invalidated",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = zneplatnenyItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "The certificate has been invalidated.",
-                    },
-                }
+            var akceCodelistResult = CodebookUtils.ParseJsonCodebook(
+                "elp-ro-akce.json",
+                CiselnikType.Akce
             );
+            codebooks.Add(akceCodelistResult.codebook);
+            codebookItems.AddRange(akceCodelistResult.items);
+            translations.AddRange(akceCodelistResult.translations);
 
-            // 2. Type of Examination (DRUH-PROHLIDKY)
-            var druhProhlidkyCiselnik = new Ciselnik
-            {
-                Id = Guid.NewGuid(),
-                Kod = "DRUH-PROHLIDKY",
-                Verze = "1",
-                PlatnostOd = now.AddYears(-1),
-                Termx = false,
-            };
-            codebooks.Add(druhProhlidkyCiselnik);
-
-            var vychoziProhlidkaItem = new CiselnikPolozka
-            {
-                Id = Guid.NewGuid(),
-                CiselnikId = druhProhlidkyCiselnik.Id,
-                Kod = "VYCHOZI",
-                Verze = "1",
-                CiselnikKod = druhProhlidkyCiselnik.Kod,
-                CiselnikVerze = druhProhlidkyCiselnik.Verze,
-            };
-            codebookItems.Add(vychoziProhlidkaItem);
-
-            var periodickaProhlidkaItem = new CiselnikPolozka
-            {
-                Id = Guid.NewGuid(),
-                CiselnikId = druhProhlidkyCiselnik.Id,
-                Kod = "PERIODICKA",
-                Verze = "1",
-                CiselnikKod = druhProhlidkyCiselnik.Kod,
-                CiselnikVerze = druhProhlidkyCiselnik.Verze,
-            };
-            codebookItems.Add(periodickaProhlidkaItem);
-
-            translations.AddRange(
-                new[]
-                {
-                    // DRUH-PROHLIDKY Ciselnik
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = druhProhlidkyCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Druh prohlídky",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = druhProhlidkyCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Typ lékařské prohlídky",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = druhProhlidkyCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Type of examination",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = druhProhlidkyCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Type of medical examination",
-                    },
-                    // VYCHOZI Item
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = vychoziProhlidkaItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Výchozí prohlídka",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = vychoziProhlidkaItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "První lékařská prohlídka",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = vychoziProhlidkaItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Initial examination",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = vychoziProhlidkaItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "First medical examination",
-                    },
-                    // PERIODICKA Item
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = periodickaProhlidkaItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Periodická prohlídka",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = periodickaProhlidkaItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Opakovaná lékařská prohlídka",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = periodickaProhlidkaItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Periodic examination",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = periodickaProhlidkaItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Repeated medical examination",
-                    },
-                }
+            var posudkuCodelistResult = CodebookUtils.ParseJsonCodebook(
+                "elp-ro-druh-posudku.json",
+                CiselnikType.DruhPosudku
             );
+            codebooks.Add(posudkuCodelistResult.codebook);
+            codebookItems.AddRange(posudkuCodelistResult.items);
+            translations.AddRange(posudkuCodelistResult.translations);
 
-            // 3. Type of PosudekRo (DRUH-POSUDKU)
-            var druhPosudkuCiselnik = new Ciselnik
-            {
-                Id = Guid.NewGuid(),
-                Kod = "DRUH-POSUDKU",
-                Verze = "1",
-                PlatnostOd = now.AddYears(-1),
-                Termx = false,
-            };
-            codebooks.Add(druhPosudkuCiselnik);
-
-            var ridicskyPosudekItem = new CiselnikPolozka
-            {
-                Id = Guid.NewGuid(),
-                CiselnikId = druhPosudkuCiselnik.Id,
-                Kod = "RIDICKY",
-                Verze = "1",
-                CiselnikKod = druhPosudkuCiselnik.Kod,
-                CiselnikVerze = druhPosudkuCiselnik.Verze,
-            };
-            codebookItems.Add(ridicskyPosudekItem);
-
-            translations.AddRange(
-                new[]
-                {
-                    // DRUH-POSUDKU Ciselnik
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = druhPosudkuCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Druh posudku",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = druhPosudkuCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Typ lékařského posudku",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = druhPosudkuCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Type of certificate",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = druhPosudkuCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Type of medical certificate",
-                    },
-                    // RIDICKY Item
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = ridicskyPosudekItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Řidičský posudek",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = ridicskyPosudekItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Posudek pro řidiče motorových vozidel",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = ridicskyPosudekItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Driver certificate",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = ridicskyPosudekItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Certificate for motor vehicle drivers",
-                    },
-                }
+            var prohlidkyCodelistResult = CodebookUtils.ParseJsonCodebook(
+                "elp-ro-druh-prohlidky.json",
+                CiselnikType.DruhProhlidky
             );
+            codebooks.Add(prohlidkyCodelistResult.codebook);
+            codebookItems.AddRange(prohlidkyCodelistResult.items);
+            translations.AddRange(prohlidkyCodelistResult.translations);
 
-            // 4. Result (VYSLEDEK)
-            var vysledekCiselnik = new Ciselnik
-            {
-                Id = Guid.NewGuid(),
-                Kod = "VYSLEDEK",
-                Verze = "1",
-                PlatnostOd = now.AddYears(-1),
-                Termx = false,
-            };
-            codebooks.Add(vysledekCiselnik);
-
-            var zpusobilyItem = new CiselnikPolozka
-            {
-                Id = Guid.NewGuid(),
-                CiselnikId = vysledekCiselnik.Id,
-                Kod = "ZPUSOBILY",
-                Verze = "1",
-                CiselnikKod = vysledekCiselnik.Kod,
-                CiselnikVerze = vysledekCiselnik.Verze,
-            };
-            codebookItems.Add(zpusobilyItem);
-
-            var nezpusobilyItem = new CiselnikPolozka
-            {
-                Id = Guid.NewGuid(),
-                CiselnikId = vysledekCiselnik.Id,
-                Kod = "NEZPUSOBILY",
-                Verze = "1",
-                CiselnikKod = vysledekCiselnik.Kod,
-                CiselnikVerze = vysledekCiselnik.Verze,
-            };
-            codebookItems.Add(nezpusobilyItem);
-
-            translations.AddRange(
-                new[]
-                {
-                    // VYSLEDEK Ciselnik
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = vysledekCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Výsledek",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = vysledekCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Výsledek lékařského posudku",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = vysledekCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Result",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = vysledekCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Result of medical certificate",
-                    },
-                    // ZPUSOBILY Item
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = zpusobilyItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Způsobilý",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = zpusobilyItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Pacient je způsobilý k řízení",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = zpusobilyItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Fit",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = zpusobilyItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Patient is fit to drive",
-                    },
-                    // NEZPUSOBILY Item
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = nezpusobilyItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Nezpůsobilý",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = nezpusobilyItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Pacient není způsobilý k řízení",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = nezpusobilyItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Unfit",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = nezpusobilyItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Patient is unfit to drive",
-                    },
-                }
+            var harmonizovaneCodelistResult = CodebookUtils.ParseJsonCodebook(
+                "elp-ro-harmonizovane-kody.json",
+                CiselnikType.HarmonizovaneKody
             );
+            codebooks.Add(harmonizovaneCodelistResult.codebook);
+            codebookItems.AddRange(harmonizovaneCodelistResult.items);
+            translations.AddRange(harmonizovaneCodelistResult.translations);
 
-            // 5. Driver Applicant Group (SKUPINA-ZADATELE-RIDIC)
-            var skupinaZadateleCiselnik = new Ciselnik
-            {
-                Id = Guid.NewGuid(),
-                Kod = "SKUPINA-ZADATELE-RIDIC",
-                Verze = "1",
-                PlatnostOd = now.AddYears(-1),
-                Termx = false,
-            };
-            codebooks.Add(skupinaZadateleCiselnik);
-
-            var skupinaAItem = new CiselnikPolozka
-            {
-                Id = Guid.NewGuid(),
-                CiselnikId = skupinaZadateleCiselnik.Id,
-                Kod = "A",
-                Verze = "1",
-                CiselnikKod = skupinaZadateleCiselnik.Kod,
-                CiselnikVerze = skupinaZadateleCiselnik.Verze,
-            };
-            codebookItems.Add(skupinaAItem);
-
-            var skupinaBItem = new CiselnikPolozka
-            {
-                Id = Guid.NewGuid(),
-                CiselnikId = skupinaZadateleCiselnik.Id,
-                Kod = "B",
-                Verze = "1",
-                CiselnikKod = skupinaZadateleCiselnik.Kod,
-                CiselnikVerze = skupinaZadateleCiselnik.Verze,
-            };
-            codebookItems.Add(skupinaBItem);
-
-            translations.AddRange(
-                new[]
-                {
-                    // SKUPINA-ZADATELE-RIDIC Ciselnik
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = skupinaZadateleCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Skupina žadatele řidič",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = skupinaZadateleCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Skupina řidičského oprávnění",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = skupinaZadateleCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Driver applicant group",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = skupinaZadateleCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Driver license group",
-                    },
-                    // A Item
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = skupinaAItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Skupina A",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = skupinaAItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Řidičská skupina A (motocykly)",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = skupinaAItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Group A",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = skupinaAItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Driver group A (motorcycles)",
-                    },
-                    // B Item
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = skupinaBItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Skupina B",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = skupinaBItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Řidičská skupina B (automobily)",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = skupinaBItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Group B",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = skupinaBItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Driver group B (cars)",
-                    },
-                }
+            var narodniCodelistResult = CodebookUtils.ParseJsonCodebook(
+                "elp-ro-narodni-kody.json",
+                CiselnikType.NarodniKody
             );
+            codebooks.Add(narodniCodelistResult.codebook);
+            codebookItems.AddRange(narodniCodelistResult.items);
+            translations.AddRange(narodniCodelistResult.translations);
 
-            // 6. Medical Specialty (ODBNORNOST)
-            var odbornostCiselnik = new Ciselnik
-            {
-                Id = Guid.NewGuid(),
-                Kod = "ODBNORNOST",
-                Verze = "1",
-                PlatnostOd = now.AddYears(-1),
-                Termx = false,
-            };
-            codebooks.Add(odbornostCiselnik);
-
-            var interniLekarItem = new CiselnikPolozka
-            {
-                Id = Guid.NewGuid(),
-                CiselnikId = odbornostCiselnik.Id,
-                Kod = "INTERNI",
-                Verze = "1",
-                CiselnikKod = odbornostCiselnik.Kod,
-                CiselnikVerze = odbornostCiselnik.Verze,
-            };
-            codebookItems.Add(interniLekarItem);
-
-            var okulistaItem = new CiselnikPolozka
-            {
-                Id = Guid.NewGuid(),
-                CiselnikId = odbornostCiselnik.Id,
-                Kod = "OKULISTA",
-                Verze = "1",
-                CiselnikKod = odbornostCiselnik.Kod,
-                CiselnikVerze = odbornostCiselnik.Verze,
-            };
-            codebookItems.Add(okulistaItem);
-
-            translations.AddRange(
-                new[]
-                {
-                    // ODBNORNOST Ciselnik
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = odbornostCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Odbornost",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = odbornostCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Lékařská odbornost",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = odbornostCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Specialty",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = odbornostCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Medical specialty",
-                    },
-                    // INTERNI Item
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = interniLekarItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Interní lékař",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = interniLekarItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Lékař interního lékařství",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = interniLekarItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Internal medicine",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = interniLekarItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Internal medicine physician",
-                    },
-                    // OKULISTA Item
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = okulistaItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Oční lékař",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = okulistaItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Oční lékař (oftalmolog)",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = okulistaItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Ophthalmologist",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = okulistaItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Eye physician (ophthalmologist)",
-                    },
-                }
+            var skupinCodelistResult = CodebookUtils.ParseJsonCodebook(
+                "elp-ro-seznam-skupin.json",
+                CiselnikType.SeznamSkupin
             );
+            codebooks.Add(skupinCodelistResult.codebook);
+            codebookItems.AddRange(skupinCodelistResult.items);
+            translations.AddRange(skupinCodelistResult.translations);
 
-            // 7. Type of Action (TYP-AKCE)
-            var typAkceCiselnik = new Ciselnik
-            {
-                Id = Guid.NewGuid(),
-                Kod = "TYP-AKCE",
-                Verze = "1",
-                PlatnostOd = now.AddYears(-1),
-                Termx = false,
-            };
-            codebooks.Add(typAkceCiselnik);
-
-            var vydaniItem = new CiselnikPolozka
-            {
-                Id = Guid.NewGuid(),
-                CiselnikId = typAkceCiselnik.Id,
-                Kod = "VYDANI",
-                Verze = "1",
-                CiselnikKod = typAkceCiselnik.Kod,
-                CiselnikVerze = typAkceCiselnik.Verze,
-            };
-            codebookItems.Add(vydaniItem);
-
-            translations.AddRange(
-                new[]
-                {
-                    // TYP-AKCE Ciselnik
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = typAkceCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Typ akce",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = typAkceCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Typ akce s posudkem",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = typAkceCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Type of action",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = typAkceCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Type of action with certificate",
-                    },
-                    // VYDANI Item
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = vydaniItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Vydání",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = vydaniItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Vydání nového posudku",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = vydaniItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Issuance",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = vydaniItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Issuance of new certificate",
-                    },
-                }
+            var stavCodelistResult = CodebookUtils.ParseJsonCodebook(
+                "elp-ro-stav-posudku.json",
+                CiselnikType.StavPosudku
             );
+            codebooks.Add(stavCodelistResult.codebook);
+            codebookItems.AddRange(stavCodelistResult.items);
+            translations.AddRange(stavCodelistResult.translations);
 
-            // 8. Operation Type (TYP-OPERACE)
-            var typOperaceCiselnik = new Ciselnik
-            {
-                Id = Guid.NewGuid(),
-                Kod = "TYP-OPERACE",
-                Verze = "1",
-                PlatnostOd = now.AddYears(-1),
-                Termx = false,
-            };
-            codebooks.Add(typOperaceCiselnik);
-
-            var vytvoreniItem = new CiselnikPolozka
-            {
-                Id = Guid.NewGuid(),
-                CiselnikId = typOperaceCiselnik.Id,
-                Kod = "VYTVORENI",
-                Verze = "1",
-                CiselnikKod = typOperaceCiselnik.Kod,
-                CiselnikVerze = typOperaceCiselnik.Verze,
-            };
-            codebookItems.Add(vytvoreniItem);
-
-            var zneplatneniItem = new CiselnikPolozka
-            {
-                Id = Guid.NewGuid(),
-                CiselnikId = typOperaceCiselnik.Id,
-                Kod = "ZNEPLATNENI",
-                Verze = "1",
-                CiselnikKod = typOperaceCiselnik.Kod,
-                CiselnikVerze = typOperaceCiselnik.Verze,
-            };
-            codebookItems.Add(zneplatneniItem);
-
-            translations.AddRange(
-                new[]
-                {
-                    // TYP-OPERACE Ciselnik
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = typOperaceCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Typ operace",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = typOperaceCiselnik.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Typ operace v historii",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = typOperaceCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Operation type",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "Ciselnik",
-                        EntityId = typOperaceCiselnik.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Type of operation in history",
-                    },
-                    // VYTVORENI Item
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = vytvoreniItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Vytvoření",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = vytvoreniItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Vytvoření posudku",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = vytvoreniItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Creation",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = vytvoreniItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Certificate creation",
-                    },
-                    // ZNEPLATNENI Item
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = zneplatneniItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Nazev",
-                        Value = "Zneplatnění",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = zneplatneniItem.Id,
-                        Language = "cs-CZ",
-                        PropertyName = "Popis",
-                        Value = "Zneplatnění posudku",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = zneplatneniItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Nazev",
-                        Value = "Invalidation",
-                    },
-                    new Translation
-                    {
-                        Id = Guid.NewGuid(),
-                        EntityType = "CiselnikPolozka",
-                        EntityId = zneplatneniItem.Id,
-                        Language = "en-US",
-                        PropertyName = "Popis",
-                        Value = "Certificate invalidation",
-                    },
-                }
+            var vysledekCodelistResult = CodebookUtils.ParseJsonCodebook(
+                "elp-ro-vysledek-posudku.json",
+                CiselnikType.Vysledek
             );
+            codebooks.Add(vysledekCodelistResult.codebook);
+            codebookItems.AddRange(vysledekCodelistResult.items);
+            translations.AddRange(vysledekCodelistResult.translations);
+
+            var zadatelCodelistResult = CodebookUtils.ParseJsonCodebook(
+                "elp-ro-zadatel-skupina.json",
+                CiselnikType.ZadatelSkupina
+            );
+            codebooks.Add(zadatelCodelistResult.codebook);
+            codebookItems.AddRange(zadatelCodelistResult.items);
+            translations.AddRange(zadatelCodelistResult.translations);
+
+            var odbnornostCodelistResult = CodebookUtils.GenerateOdbnornost();
+            codebooks.Add(odbnornostCodelistResult.codebook);
+            codebookItems.AddRange(odbnornostCodelistResult.items);
+            translations.AddRange(odbnornostCodelistResult.translations);
 
             foreach (var translation in translations)
             {
@@ -1140,7 +128,7 @@ namespace ElektronickePosudky.Infrastructure.Persistence
             {
                 new Pacient
                 {
-                    Rid = Guid.NewGuid(),
+                    Rid = GuidUtils.Generate(GuidUtils.PacientPrefix, 1),
                     Jmeno = "Jan",
                     Prijmeni = "Novák",
                     DatumNarozeni = new DateTime(1985, 5, 20),
@@ -1151,7 +139,7 @@ namespace ElektronickePosudky.Infrastructure.Persistence
                 },
                 new Pacient
                 {
-                    Rid = Guid.NewGuid(),
+                    Rid = GuidUtils.Generate(GuidUtils.PacientPrefix, 2),
                     Jmeno = "Marie",
                     Prijmeni = "Svobodová",
                     DatumNarozeni = new DateTime(1990, 3, 15),
@@ -1162,7 +150,7 @@ namespace ElektronickePosudky.Infrastructure.Persistence
                 },
                 new Pacient
                 {
-                    Rid = Guid.NewGuid(),
+                    Rid = GuidUtils.Generate(GuidUtils.PacientPrefix, 3),
                     Jmeno = "Petr",
                     Prijmeni = "Dvořák",
                     DatumNarozeni = new DateTime(1978, 11, 8),
@@ -1178,21 +166,21 @@ namespace ElektronickePosudky.Infrastructure.Persistence
             {
                 new PoskytovatelZdravotnickychSluzeb
                 {
-                    Id = Guid.NewGuid(),
+                    Id = GuidUtils.Generate(GuidUtils.PoskytovatelZdravotnickychSluzebPrefix, 1),
                     Ico = "12345678",
                     Nazev = "Zdravotní zařízení s.r.o.",
                     Adresa = "Praha 2, Karlovo náměstí 10",
                 },
                 new PoskytovatelZdravotnickychSluzeb
                 {
-                    Id = Guid.NewGuid(),
+                    Id = GuidUtils.Generate(GuidUtils.PoskytovatelZdravotnickychSluzebPrefix, 2),
                     Ico = "87654321",
                     Nazev = "Lékařská klinika Brno a.s.",
                     Adresa = "Brno, Hlavní třída 25",
                 },
                 new PoskytovatelZdravotnickychSluzeb
                 {
-                    Id = Guid.NewGuid(),
+                    Id = GuidUtils.Generate(GuidUtils.PoskytovatelZdravotnickychSluzebPrefix, 3),
                     Ico = "11223344",
                     Nazev = "Oční ambulance Ostrava",
                     Adresa = "Ostrava, Polská 15",
@@ -1204,26 +192,26 @@ namespace ElektronickePosudky.Infrastructure.Persistence
             {
                 new ZdravotnickyPracovnik
                 {
-                    KrzpId = Guid.NewGuid(),
+                    KrzpId = GuidUtils.Generate(GuidUtils.ZdravotnickyPracovnikPrefix, 1),
                     Jmeno = "Petr",
                     Prijmeni = "Dvořák",
-                    OdbornostId = interniLekarItem.Id,
+                    OdbornostId = odbnornostCodelistResult.items[0].Id,
                     PoskytovatelId = providers[0].Id,
                 },
                 new ZdravotnickyPracovnik
                 {
-                    KrzpId = Guid.NewGuid(),
+                    KrzpId = GuidUtils.Generate(GuidUtils.ZdravotnickyPracovnikPrefix, 2),
                     Jmeno = "Anna",
                     Prijmeni = "Novotná",
-                    OdbornostId = okulistaItem.Id,
+                    OdbornostId = odbnornostCodelistResult.items[1].Id,
                     PoskytovatelId = providers[1].Id,
                 },
                 new ZdravotnickyPracovnik
                 {
-                    KrzpId = Guid.NewGuid(),
+                    KrzpId = GuidUtils.Generate(GuidUtils.ZdravotnickyPracovnikPrefix, 3),
                     Jmeno = "Michal",
                     Prijmeni = "Procházka",
-                    OdbornostId = interniLekarItem.Id,
+                    OdbornostId = odbnornostCodelistResult.items[0].Id,
                     PoskytovatelId = providers[2].Id,
                 },
             };
@@ -1236,12 +224,12 @@ namespace ElektronickePosudky.Infrastructure.Persistence
                     Id = Guid.NewGuid(),
                     Rid = patients[0].Rid,
                     KrzpId = doctors[0].KrzpId,
-                    StavPosudkuId = platnyItem.Id,
-                    DruhProhlidkyId = vychoziProhlidkaItem.Id,
-                    DruhPosudkuId = ridicskyPosudekItem.Id,
-                    TypAkceId = vydaniItem.Id,
-                    VysledekId = zpusobilyItem.Id,
-                    SkupinaZadateleRidicId = skupinaBItem.Id,
+                    StavPosudkuId = codebookItems.FindByKod("stav_posudku_1")?.Id,
+                    DruhProhlidkyId = codebookItems.FindByKod("druh_prohlidky_ro_1")?.Id,
+                    DruhPosudkuId = codebookItems.FindByKod("druh_posudku_ro_1")?.Id,
+                    TypAkceId = codebookItems.FindByKod("akce_ro_1")?.Id,
+                    VysledekId = codebookItems.FindByKod("vysledek_posudku_ro_1")?.Id,
+                    SkupinaZadateleRidicId = codebookItems.FindByKod("skupina_ro_2")?.Id,
                     DatumVystaveni = now.Date,
                     PlatnostDo = now.Date.AddYears(1),
                     DatumVytvoreni = now,
@@ -1251,12 +239,12 @@ namespace ElektronickePosudky.Infrastructure.Persistence
                     Id = Guid.NewGuid(),
                     Rid = patients[1].Rid,
                     KrzpId = doctors[1].KrzpId,
-                    StavPosudkuId = platnyItem.Id,
-                    DruhProhlidkyId = periodickaProhlidkaItem.Id,
-                    DruhPosudkuId = ridicskyPosudekItem.Id,
-                    TypAkceId = vydaniItem.Id,
-                    VysledekId = zpusobilyItem.Id,
-                    SkupinaZadateleRidicId = skupinaAItem.Id,
+                    StavPosudkuId = codebookItems.FindByKod("stav_posudku_1")?.Id,
+                    DruhProhlidkyId = codebookItems.FindByKod("druh_prohlidky_ro_2")?.Id,
+                    DruhPosudkuId = codebookItems.FindByKod("druh_posudku_ro_1")?.Id,
+                    TypAkceId = codebookItems.FindByKod("akce_ro_1")?.Id,
+                    VysledekId = codebookItems.FindByKod("vysledek_posudku_ro_1")?.Id,
+                    SkupinaZadateleRidicId = codebookItems.FindByKod("skupina_ro_1")?.Id,
                     DatumVystaveni = now.Date.AddDays(-30),
                     PlatnostDo = now.Date.AddMonths(6),
                     DatumVytvoreni = now.AddDays(-30),
@@ -1270,15 +258,15 @@ namespace ElektronickePosudky.Infrastructure.Persistence
                 {
                     Id = Guid.NewGuid(),
                     PosudekRoId = certificates[0].Id,
-                    SkupinaZadateleRidicId = skupinaBItem.Id,
-                    VysledekId = zpusobilyItem.Id,
+                    SkupinaZadateleRidicId = codebookItems.FindByKod("skupina_ro_2")!.Id,
+                    VysledekId = codebookItems.FindByKod("vysledek_posudku_ro_1")!.Id,
                 },
                 new PosudekRoZpusobilost
                 {
                     Id = Guid.NewGuid(),
                     PosudekRoId = certificates[1].Id,
-                    SkupinaZadateleRidicId = skupinaAItem.Id,
-                    VysledekId = zpusobilyItem.Id,
+                    SkupinaZadateleRidicId = codebookItems.FindByKod("skupina_ro_1")!.Id,
+                    VysledekId = codebookItems.FindByKod("vysledek_posudku_ro_1")!.Id,
                 },
             };
 
@@ -1289,7 +277,7 @@ namespace ElektronickePosudky.Infrastructure.Persistence
                 {
                     Id = Guid.NewGuid(),
                     PosudekRoId = certificates[0].Id,
-                    TypOperaceId = vytvoreniItem.Id,
+                    TypOperaceId = codebookItems.FindByKod("akce_ro_1")!.Id,
                     DatumOperace = now,
                     KrzpId = doctors[0].KrzpId,
                 },
@@ -1297,7 +285,7 @@ namespace ElektronickePosudky.Infrastructure.Persistence
                 {
                     Id = Guid.NewGuid(),
                     PosudekRoId = certificates[1].Id,
-                    TypOperaceId = vytvoreniItem.Id,
+                    TypOperaceId = codebookItems.FindByKod("akce_ro_1")!.Id,
                     DatumOperace = now.AddDays(-30),
                     KrzpId = doctors[1].KrzpId,
                 },
@@ -1310,5 +298,13 @@ namespace ElektronickePosudky.Infrastructure.Persistence
             modelBuilder.Entity<PosudekRoZpusobilost>().HasData(zpusobilosti);
             modelBuilder.Entity<PosudekRoHistory>().HasData(histories);
         }
+
+        private static Ciselnik? FindByKod(this IEnumerable<Ciselnik> items, string kod) =>
+            items.FirstOrDefault(x => x.Kod.Equals(kod));
+
+        private static CiselnikPolozka? FindByKod(
+            this IEnumerable<CiselnikPolozka> items,
+            string kod
+        ) => items.FirstOrDefault(x => x.Kod.Equals(kod));
     }
 }

@@ -57,7 +57,7 @@ namespace ElektronickePosudky.Application.Handlers
                 ifMatchBytes;
 
             var invalidItem = await _context.CiselnikPolozky.FirstOrDefaultAsync(
-                x => x.Kod == "ZNEPLATNENY",
+                x => x.Kod == "stav_posudku_3",
                 cancellationToken
             );
             if (invalidItem == null)

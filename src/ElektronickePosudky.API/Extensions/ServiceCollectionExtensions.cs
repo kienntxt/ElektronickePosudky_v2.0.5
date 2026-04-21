@@ -30,7 +30,9 @@ namespace ElektronickePosudky.API.Extensions
                 options =>
                     options.UseSqlServer(
                         configuration.GetConnectionString("DefaultConnection")
-                            ?? "Server=localhost,1433;Database=ElektronickePosudky;User=app_user;Password=Passw0rd!;TrustServerPosudekRo=True;",
+                            ?? throw new InvalidOperationException(
+                                "Fatal: Failed to configure DefaultConnection"
+                            ),
                         sqlOptions =>
                             sqlOptions.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)
                     )

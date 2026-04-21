@@ -1,0 +1,4783 @@
+﻿{
+    "id": 2328890,
+    "valueSet": "elp-ro-harmonizovane-kody",
+    "version": "1.0.0",
+    "preferredLanguage": "cs",
+    "status": "active",
+    "releaseDate": "2025-12-18",
+    "created": "2025-12-20T12:42:34.113785Z",
+    "algorithm": "semver",
+    "ruleSet": {
+        "id": 2328891,
+        "inactive": false,
+        "rules": [
+            {
+                "id": 2328892,
+                "type": "include",
+                "codeSystem": "elp-ro",
+                "codeSystemVersion": {
+                    "id": 2328252,
+                    "version": "1.0.0"
+                },
+                "concepts": [
+                    {
+                        "concept": {
+                            "code": "01.01"
+                        },
+                        "display": {
+                            "name": "01.01 Brýle",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "01.02"
+                        },
+                        "display": {
+                            "name": "01.02 Kontaktní čočky",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "01.05"
+                        },
+                        "display": {
+                            "name": "01.05 Oční kryt",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "01.06"
+                        },
+                        "display": {
+                            "name": "01.06 Brýle nebo kontaktní čočky",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "01.07"
+                        },
+                        "display": {
+                            "name": "01.07 Specifické optické pomůcky",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "02"
+                        },
+                        "display": {
+                            "name": "02. Sluchové pomůcky/komunikační pomůcky",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "03.01"
+                        },
+                        "display": {
+                            "name": "03.01 Protéza/ortéza horní končetiny",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "03.02"
+                        },
+                        "display": {
+                            "name": "03.02 Protéza/ortéza dolní končetiny",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "10.02"
+                        },
+                        "display": {
+                            "name": "10.02 Automatická převodovka",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "10.04"
+                        },
+                        "display": {
+                            "name": "10.04 Přizpůsobené ústrojí ovládání převodovky",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "15.01"
+                        },
+                        "display": {
+                            "name": "15.01 Přizpůsobený pedál spojky",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "15.02"
+                        },
+                        "display": {
+                            "name": "15.02 Ručně ovládaná spojka",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "15.03"
+                        },
+                        "display": {
+                            "name": "15.03 Automatická spojka",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "15.04"
+                        },
+                        "display": {
+                            "name": "15.04 Opatření proti zablokování nebo aktivaci pedálu spojky",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "20.01"
+                        },
+                        "display": {
+                            "name": "20.01 Přizpůsobený brzdový pedál",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "20.03"
+                        },
+                        "display": {
+                            "name": "20.03 Brzdový pedál upravený na levou nohu",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "20.04"
+                        },
+                        "display": {
+                            "name": "20.04 Posuvný brzdový pedál",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "20.05"
+                        },
+                        "display": {
+                            "name": "20.05 Sklopený brzdový pedál",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "20.06"
+                        },
+                        "display": {
+                            "name": "20.06 Ručně ovládaná provozní brzda",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "20.07"
+                        },
+                        "display": {
+                            "name": "20.07 Ovládání brzdy s použitím maximální síly ... N [například: 20.07(300 N)]",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "20.09"
+                        },
+                        "display": {
+                            "name": "20.09 Přizpůsobená parkovací brzda",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "20.12"
+                        },
+                        "display": {
+                            "name": "20.12 Opatření proti zablokování nebo aktivaci brzdového pedálu",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "20.13"
+                        },
+                        "display": {
+                            "name": "20.13 Ovládání brzdy kolenem",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "20.14"
+                        },
+                        "display": {
+                            "name": "20.14 Ovládání brzdového systému s podporou vnější síly",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "25.01"
+                        },
+                        "display": {
+                            "name": "25.01 Přizpůsobený pedál akcelerátoru",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "25.03"
+                        },
+                        "display": {
+                            "name": "25.03 Sklopený pedál akcelerátoru",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "25.04"
+                        },
+                        "display": {
+                            "name": "25.04 Ručně ovládaný akcelerátor",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "25.05"
+                        },
+                        "display": {
+                            "name": "25.05 Ovládání akcelerátoru kolenem",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "25.06"
+                        },
+                        "display": {
+                            "name": "25.06 Ovládání akcelerátoru s podporou vnější síly",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "25.08"
+                        },
+                        "display": {
+                            "name": "25.08 Pedál akcelerátoru nalevo",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "25.09"
+                        },
+                        "display": {
+                            "name": "25.09 Opatření proti zablokování nebo aktivaci akcelerátoru",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "31.01"
+                        },
+                        "display": {
+                            "name": "31.01 Další sada paralelních pedálů",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "31.02"
+                        },
+                        "display": {
+                            "name": "31.02 Pedály ve stejné (nebo téměř stejné) úrovni",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "31.03"
+                        },
+                        "display": {
+                            "name": "31.03 Opatření proti zablokování nebo aktivaci akcelerátoru a brzdových pedálů, pokudpedály nejsou ovládány nohou",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "31.04"
+                        },
+                        "display": {
+                            "name": "31.04 Zvýšená podlaha",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "32.01 "
+                        },
+                        "display": {
+                            "name": "32.01 Akcelerátor a provozní brzda jako kombinovaný systém ovládaný jednourukou",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "32.02 "
+                        },
+                        "display": {
+                            "name": "32.02 Akcelerátor a provozní brzda jako kombinovaný systém ovládaný vnější silou",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "33.01"
+                        },
+                        "display": {
+                            "name": "33.01 Akcelerátor, provozní brzda a řízení jako kombinovaný systém ovládaný vnějšísilou jednou rukou",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "33.02"
+                        },
+                        "display": {
+                            "name": "33.02 Akcelerátor, provozní brzda a řízení jako kombinovaný systém ovládaný vnějšísilou oběma rukama",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "35.02"
+                        },
+                        "display": {
+                            "name": "35.02 Ovladače ovladatelné bez puštění zařízení pro řízení vozidla",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "35.03"
+                        },
+                        "display": {
+                            "name": "35.03 Ovladače ovladatelné levou rukou bez puštění zařízení pro řízení vozidla",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "35.04"
+                        },
+                        "display": {
+                            "name": "35.04 Ovladače ovladatelné pravou rukou bez puštění zařízení pro řízení vozidla",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "35.05"
+                        },
+                        "display": {
+                            "name": "35.05 Ovladače ovladatelné bez puštění zařízení pro řízení vozidla a mechanismy akcelerátoru a brzd",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "40.01"
+                        },
+                        "display": {
+                            "name": "40.01 Řízení s použitím maximální ovládací síly... N [například 40.01 (140 N)]",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "40.05"
+                        },
+                        "display": {
+                            "name": "40.05 Přizpůsobený volant (větší nebo silnější volant, zmenšený průměr volantu, apod.)",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "40.06"
+                        },
+                        "display": {
+                            "name": "40.06 Přizpůsobená poloha volantu",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "40.09"
+                        },
+                        "display": {
+                            "name": "40.09 Nožní ovládání řízení",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "40.11"
+                        },
+                        "display": {
+                            "name": "40.11 Pomocná zařízení na volantu",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "40.14"
+                        },
+                        "display": {
+                            "name": "40.14 Alternativně přizpůsobený systém řízení vozidla ovládaný jednou rukou/paží",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "40.15"
+                        },
+                        "display": {
+                            "name": "40.15 Alternativně přizpůsobený systém řízení vozidla ovládaný dvěma rukama/pažemi",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "42.01"
+                        },
+                        "display": {
+                            "name": "42.01 Přizpůsobené zařízení pro výhled dozadu",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "42.03"
+                        },
+                        "display": {
+                            "name": "42.03 Přídavné vnitřní zařízení umožňující výhled do stran",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "42.05"
+                        },
+                        "display": {
+                            "name": "42.05 Zařízení k eliminaci mrtvého úhlu",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "43.01"
+                        },
+                        "display": {
+                            "name": "43.01 Výška sedadla řidiče umožňující normální výhled a v normální vzdálenosti od-volantu a pedálů",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "43.02"
+                        },
+                        "display": {
+                            "name": "43.02 Anatomicky přizpůsobené sedadlo řidiče",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "43.03"
+                        },
+                        "display": {
+                            "name": "43.03 Sedadlo řidiče s postranní opěrou pro dobrou stabilitu",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "43.04"
+                        },
+                        "display": {
+                            "name": "43.04 Sedadlo řidiče s opěrkou ruky",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "43.06"
+                        },
+                        "display": {
+                            "name": "43.06 Přizpůsobení bezpečnostního pásu",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "43.07"
+                        },
+                        "display": {
+                            "name": "43.07 Typ bezpečnostního pásu s podporou pro dobrou stabilitu",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "44.01"
+                        },
+                        "display": {
+                            "name": "44.01 Samostatně ovládaná brzda",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "44.02"
+                        },
+                        "display": {
+                            "name": "44.02 Přizpůsobená brzda na předním kole",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "44.03"
+                        },
+                        "display": {
+                            "name": "44.03 Přizpůsobená brzda na zadním kole",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "44.04"
+                        },
+                        "display": {
+                            "name": "44.04 Přizpůsobená rukojeť akcelerátoru",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "44.08"
+                        },
+                        "display": {
+                            "name": "44.08 Výška sedadla umožňující řidiči v poloze vsedě mít současně obě nohy nazemi a udržovat motocykl v rovnováze při zastavení a stání",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "44.09"
+                        },
+                        "display": {
+                            "name": "44.09 Maximální ovládací síla brzdy předního kola... N [například 44.09 (140 N)]",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "44.10"
+                        },
+                        "display": {
+                            "name": "44.10 Maximální ovládací síla brzdy zadního kola... N [například 44.10 (240 N)]",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "44.11"
+                        },
+                        "display": {
+                            "name": "44.11 Přizpůsobená stupačka",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "44.12"
+                        },
+                        "display": {
+                            "name": "44.12 Přizpůsobená řídítka",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "45"
+                        },
+                        "display": {
+                            "name": "45. Motocykl pouze s postranním vozíkem",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "46"
+                        },
+                        "display": {
+                            "name": "46. Pouze pro tříkolová motorová vozidla",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "47"
+                        },
+                        "display": {
+                            "name": "47. Pouze pro vozidla s více než dvěma koly, u kterých řidič nemusí pro rozjetí, zastavení a stání udržovat rovnováhu",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "50"
+                        },
+                        "display": {
+                            "name": "50. Omezení na určité vozidlo/číslo podvozku (identifikační číslo vozidla, VIN)",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "61"
+                        },
+                        "display": {
+                            "name": "61. Omezení jízdy podle denní doby (například: jedna hodina po východu slunce a jedna hodina před západem slunce)",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "62"
+                        },
+                        "display": {
+                            "name": "62. Omezení jízdy v okruhu ... km od místa bydliště řidiče nebo pouze ve městě/regionu",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "63"
+                        },
+                        "display": {
+                            "name": "63. Řízení vozidla bez cestujících",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "64"
+                        },
+                        "display": {
+                            "name": "64. Jízda rychlostí nepřesahující ... km/h",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "65"
+                        },
+                        "display": {
+                            "name": "65. Řízení vozidla povoleno výhradně v doprovodu jiného držitele řidičského oprávnění minimálně stejné skupiny vozidel",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "66"
+                        },
+                        "display": {
+                            "name": "66. Bez přívěsu",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "67"
+                        },
+                        "display": {
+                            "name": "67. Zákaz jízdy na dálnici",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "78"
+                        },
+                        "display": {
+                            "name": "78. Pouze pro vozidla s automatickou převodovkou",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    }
+                ],
+                "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro"
+            }
+        ]
+    },
+    "snapshot": {
+        "id": 68,
+        "valueSet": "elp-ro-harmonizovane-kody",
+        "valueSetVersion": {
+            "id": 2328890,
+            "version": "1.0.0"
+        },
+        "conceptsTotal": 80,
+        "expansion": [
+            {
+                "concept": {
+                    "conceptVersionId": 2328510,
+                    "code": "43.01",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "43.01 Výška sedadla řidiče umožňující normální výhled a v normální vzdálenosti od-volantu a pedálů",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328643,
+                        "designationTypeId": 2328250,
+                        "name": "43.01 Výška sedadla řidiče umožňující normální výhled a v normální vzdálenosti od-volantu a pedálů",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328510,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328794,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328510,
+                        "sourceCode": "43.01",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328518,
+                    "code": "10.02",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "10.02 Automatická převodovka",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328697,
+                        "designationTypeId": 2328250,
+                        "name": "10.02 Automatická převodovka",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328518,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328830,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328518,
+                        "sourceCode": "10.02",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328517,
+                    "code": "10.04",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "10.04 Přizpůsobené ústrojí ovládání převodovky",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328698,
+                        "designationTypeId": 2328250,
+                        "name": "10.04 Přizpůsobené ústrojí ovládání převodovky",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328517,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328831,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328517,
+                        "sourceCode": "10.04",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328537,
+                    "code": "20.07",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "20.07 Ovládání brzdy s použitím maximální síly ... N [například: 20.07(300 N)]",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328718,
+                        "designationTypeId": 2328250,
+                        "name": "20.07 Ovládání brzdy s použitím maximální síly ... N [například: \"20.07(300 N)\"]",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328537,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328851,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328537,
+                        "sourceCode": "20.07",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328486,
+                    "code": "25.09",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "25.09 Opatření proti zablokování nebo aktivaci akcelerátoru",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328619,
+                        "designationTypeId": 2328250,
+                        "name": "25.09 Opatření proti zablokování nebo aktivaci akcelerátoru",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328486,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328770,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328486,
+                        "sourceCode": "25.09",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328497,
+                    "code": "35.05",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "35.05 Ovladače ovladatelné bez puštění zařízení pro řízení vozidla a mechanismy akcelerátoru a brzd",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328632,
+                        "designationTypeId": 2328250,
+                        "name": "35.05 Ovladače ovladatelné bez puštění zařízení pro řízení vozidla a mechanismy akcelerátoru a brzd",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328497,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328783,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328497,
+                        "sourceCode": "35.05",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328533,
+                    "code": "20.03",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "20.03 Brzdový pedál upravený na levou nohu",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328714,
+                        "designationTypeId": 2328250,
+                        "name": "20.03 Brzdový pedál upravený na levou nohu",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328533,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328847,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328533,
+                        "sourceCode": "20.03",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328490,
+                    "code": "31.04",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "31.04 Zvýšená podlaha",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328623,
+                        "designationTypeId": 2328250,
+                        "name": "31.04 Zvýšená podlaha",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328490,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328774,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328490,
+                        "sourceCode": "31.04",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328540,
+                    "code": "25.01",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "25.01 Přizpůsobený pedál akcelerátoru",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328722,
+                        "designationTypeId": 2328250,
+                        "name": "25.01 Přizpůsobený pedál akcelerátoru",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328540,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328855,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328540,
+                        "sourceCode": "25.01",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328430,
+                    "code": "44.02",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "44.02 Přizpůsobená brzda na předním kole",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328564,
+                        "designationTypeId": 2328250,
+                        "name": "44.02 Přizpůsobená brzda na předním kole",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328430,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328731,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328430,
+                        "sourceCode": "44.02",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328503,
+                    "code": "42.05",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "42.05 Zařízení k eliminaci mrtvého úhlu",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328634,
+                        "designationTypeId": 2328250,
+                        "name": "42.05 Zařízení k eliminaci mrtvého úhlu",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328503,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328785,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328503,
+                        "sourceCode": "42.05",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328505,
+                    "code": "42.01",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "42.01 Přizpůsobené zařízení pro výhled dozadu",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328640,
+                        "designationTypeId": 2328250,
+                        "name": "42.01 Přizpůsobené zařízení pro výhled dozadu",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328505,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328791,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328505,
+                        "sourceCode": "42.01",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328481,
+                    "code": "25.05",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "25.05 Ovládání akcelerátoru kolenem",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328616,
+                        "designationTypeId": 2328250,
+                        "name": "25.05 Ovládání akcelerátoru kolenem",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328481,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328767,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328481,
+                        "sourceCode": "25.05",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328441,
+                    "code": "44.10",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "44.10 Maximální ovládací síla brzdy zadního kola... N [například 44.10 (240 N)]",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328578,
+                        "designationTypeId": 2328250,
+                        "name": "44.10 Maximální ovládací síla brzdy zadního kola... N [například \"44.10 (240 N)\"]",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328441,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328743,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328441,
+                        "sourceCode": "44.10",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328448,
+                    "code": "63",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "63. Řízení vozidla bez cestujících",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328650,
+                        "designationTypeId": 2328250,
+                        "name": "63. Řízení vozidla bez cestujících",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328448,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328800,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328448,
+                        "sourceCode": "63",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328447,
+                    "code": "64",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "64. Jízda rychlostí nepřesahující ... km/h",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328580,
+                        "designationTypeId": 2328250,
+                        "name": "64. Jízda rychlostí nepřesahující ... km/h",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328447,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328745,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328447,
+                        "sourceCode": "64",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328442,
+                    "code": "61",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "61. Omezení jízdy podle denní doby (například: jedna hodina po východu slunce a jedna hodina před západem slunce)",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328577,
+                        "designationTypeId": 2328250,
+                        "name": "61. Omezení jízdy podle denní doby (například: jedna hodina po východu slunce a jedna hodina před západem slunce)",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328442,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328742,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328442,
+                        "sourceCode": "61",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328449,
+                    "code": "62",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "62. Omezení jízdy v okruhu ... km od místa bydliště řidiče nebo pouze ve městě/regionu",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328649,
+                        "designationTypeId": 2328250,
+                        "name": "62. Omezení jízdy v okruhu ... km od místa bydliště řidiče nebo pouze ve městě/regionu",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328449,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328799,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328449,
+                        "sourceCode": "62",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328495,
+                    "code": "40.05",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "40.05 Přizpůsobený volant (větší nebo silnější volant, zmenšený průměr volantu, apod.)",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328626,
+                        "designationTypeId": 2328250,
+                        "name": "40.05 Přizpůsobený volant (větší nebo silnější volant, zmenšený průměr volantu, apod.)",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328495,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328777,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328495,
+                        "sourceCode": "40.05",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328452,
+                    "code": "67",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "67. Zákaz jízdy na dálnici",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328656,
+                        "designationTypeId": 2328250,
+                        "name": "67. Zákaz jízdy na dálnici",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328452,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328804,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328452,
+                        "sourceCode": "67",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328496,
+                    "code": "40.01",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "40.01 Řízení s použitím maximální ovládací síly... N [například 40.01 (140 N)]",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328633,
+                        "designationTypeId": 2328250,
+                        "name": "40.01 Řízení s použitím maximální ovládací síly... N [například \"40.01 (140 N)\"]",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328496,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328784,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328496,
+                        "sourceCode": "40.01",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328446,
+                    "code": "65",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "65. Řízení vozidla povoleno výhradně v doprovodu jiného držitele řidičského oprávnění minimálně stejné skupiny vozidel",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328581,
+                        "designationTypeId": 2328250,
+                        "name": "65. Řízení vozidla povoleno výhradně v doprovodu jiného držitele řidičského oprávnění minimálně stejné skupiny vozidel",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328446,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328746,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328446,
+                        "sourceCode": "65",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328453,
+                    "code": "66",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "66. Bez přívěsu",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328655,
+                        "designationTypeId": 2328250,
+                        "name": "66. Bez přívěsu",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328453,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328803,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328453,
+                        "sourceCode": "66",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328492,
+                    "code": "35.02",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "35.02 Ovladače ovladatelné bez puštění zařízení pro řízení vozidla",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328629,
+                        "designationTypeId": 2328250,
+                        "name": "35.02 Ovladače ovladatelné bez puštění zařízení pro řízení vozidla",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328492,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328780,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328492,
+                        "sourceCode": "35.02",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328479,
+                    "code": "25.08",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "25.08 Pedál akcelerátoru nalevo",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328688,
+                        "designationTypeId": 2328250,
+                        "name": "25.08 Pedál akcelerátoru nalevo",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328479,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328821,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328479,
+                        "sourceCode": "25.08",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328478,
+                    "code": "01.02",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "01.02 Kontaktní čočky",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328689,
+                        "designationTypeId": 2328250,
+                        "name": "01.02 Kontaktní čočky",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328478,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328822,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328478,
+                        "sourceCode": "01.02",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328487,
+                    "code": "01.01",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "01.01 Brýle",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328618,
+                        "designationTypeId": 2328250,
+                        "name": "01.01 Brýle",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328487,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328769,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328487,
+                        "sourceCode": "01.01",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328501,
+                    "code": "40.09",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "40.09 Nožní ovládání řízení",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328636,
+                        "designationTypeId": 2328250,
+                        "name": "40.09 Nožní ovládání řízení",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328501,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328787,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328501,
+                        "sourceCode": "40.09",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328483,
+                    "code": "31.03",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "31.03 Opatření proti zablokování nebo aktivaci akcelerátoru a brzdových pedálů, pokudpedály nejsou ovládány nohou",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328614,
+                        "designationTypeId": 2328250,
+                        "name": "31.03 Opatření proti zablokování nebo aktivaci akcelerátoru a brzdových pedálů, pokudpedály nejsou ovládány nohou",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328483,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328765,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328483,
+                        "sourceCode": "31.03",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328541,
+                    "code": "20.14",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "20.14 Ovládání brzdového systému s podporou vnější síly",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328721,
+                        "designationTypeId": 2328250,
+                        "name": "20.14 Ovládání brzdového systému s podporou vnější síly",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328541,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328854,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328541,
+                        "sourceCode": "20.14",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328439,
+                    "code": "44.12",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "44.12 Přizpůsobená řídítka",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328572,
+                        "designationTypeId": 2328250,
+                        "name": "44.12 Přizpůsobená řídítka",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328439,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328737,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328439,
+                        "sourceCode": "44.12",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328440,
+                    "code": "44.11",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "44.11 Přizpůsobená stupačka",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328579,
+                        "designationTypeId": 2328250,
+                        "name": "44.11 Přizpůsobená stupačka",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328440,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328744,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328440,
+                        "sourceCode": "44.11",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328437,
+                    "code": "44.03",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "44.03 Přizpůsobená brzda na zadním kole",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328574,
+                        "designationTypeId": 2328250,
+                        "name": "44.03 Přizpůsobená brzda na zadním kole",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328437,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328739,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328437,
+                        "sourceCode": "44.03",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328514,
+                    "code": "01.07",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "01.07 Specifické optické pomůcky",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328693,
+                        "designationTypeId": 2328250,
+                        "name": "01.07 Specifické optické pomůcky",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328514,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328826,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328514,
+                        "sourceCode": "01.07",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328476,
+                    "code": "01.06",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "01.06 Brýle nebo kontaktní čočky",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328691,
+                        "designationTypeId": 2328250,
+                        "name": "01.06 Brýle nebo kontaktní čočky",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328476,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328824,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328476,
+                        "sourceCode": "01.06",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328482,
+                    "code": "25.04",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "25.04 Ručně ovládaný akcelerátor",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328615,
+                        "designationTypeId": 2328250,
+                        "name": "25.04 Ručně ovládaný akcelerátor",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328482,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328766,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328482,
+                        "sourceCode": "25.04",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328477,
+                    "code": "01.05",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "01.05 Oční kryt",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328690,
+                        "designationTypeId": 2328250,
+                        "name": "01.05 Oční kryt",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328477,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328823,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328477,
+                        "sourceCode": "01.05",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328507,
+                    "code": "43.04",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "43.04 Sedadlo řidiče s opěrkou ruky",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328638,
+                        "designationTypeId": 2328250,
+                        "name": "43.04 Sedadlo řidiče s opěrkou ruky",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328507,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328789,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328507,
+                        "sourceCode": "43.04",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328524,
+                    "code": "15.04",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "15.04 Opatření proti zablokování nebo aktivaci pedálu spojky",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328707,
+                        "designationTypeId": 2328250,
+                        "name": "15.04 Opatření proti zablokování nebo aktivaci pedálu spojky",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328524,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328840,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328524,
+                        "sourceCode": "15.04",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328525,
+                    "code": "15.03",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "15.03 Automatická spojka",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328706,
+                        "designationTypeId": 2328250,
+                        "name": "15.03 Automatická spojka",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328525,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328839,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328525,
+                        "sourceCode": "15.03",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328526,
+                    "code": "15.02",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "15.02 Ručně ovládaná spojka",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328705,
+                        "designationTypeId": 2328250,
+                        "name": "15.02 Ručně ovládaná spojka",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328526,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328838,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328526,
+                        "sourceCode": "15.02",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328519,
+                    "code": "15.01",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "15.01 Přizpůsobený pedál spojky",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328696,
+                        "designationTypeId": 2328250,
+                        "name": "15.01 Přizpůsobený pedál spojky",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328519,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328829,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328519,
+                        "sourceCode": "15.01",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "code": "32.02 ",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": []
+                },
+                "display": {
+                    "name": "32.02 Akcelerátor a provozní brzda jako kombinovaný systém ovládaný vnější silou",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328502,
+                    "code": "40.06",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "40.06 Přizpůsobená poloha volantu",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328635,
+                        "designationTypeId": 2328250,
+                        "name": "40.06 Přizpůsobená poloha volantu",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328502,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328786,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328502,
+                        "sourceCode": "40.06",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328451,
+                    "code": "78",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "78. Pouze pro vozidla s automatickou převodovkou",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328646,
+                        "designationTypeId": 2328250,
+                        "name": "78. Pouze pro vozidla s automatickou převodovkou",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328451,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328797,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328451,
+                        "sourceCode": "78",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328499,
+                    "code": "40.14",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "40.14 Alternativně přizpůsobený systém řízení vozidla ovládaný jednou rukou/paží",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328630,
+                        "designationTypeId": 2328250,
+                        "name": "40.14 Alternativně přizpůsobený systém řízení vozidla ovládaný jednou rukou/paží",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328499,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328781,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328499,
+                        "sourceCode": "40.14",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328504,
+                    "code": "42.03",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "42.03 Přídavné vnitřní zařízení umožňující výhled do stran",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328641,
+                        "designationTypeId": 2328250,
+                        "name": "42.03 Přídavné vnitřní zařízení umožňující výhled do stran",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328504,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328792,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328504,
+                        "sourceCode": "42.03",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328536,
+                    "code": "20.09",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "20.09 Přizpůsobená parkovací brzda",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328719,
+                        "designationTypeId": 2328250,
+                        "name": "20.09 Přizpůsobená parkovací brzda",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328536,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328852,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328536,
+                        "sourceCode": "20.09",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328491,
+                    "code": "35.03",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "35.03 Ovladače ovladatelné levou rukou bez puštění zařízení pro řízení vozidla",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328622,
+                        "designationTypeId": 2328250,
+                        "name": "35.03 Ovladače ovladatelné levou rukou bez puštění zařízení pro řízení vozidla",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328491,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328773,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328491,
+                        "sourceCode": "35.03",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328435,
+                    "code": "44.08",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "44.08 Výška sedadla umožňující řidiči v poloze vsedě mít současně obě nohy nazemi a udržovat motocykl v rovnováze při zastavení a stání",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328568,
+                        "designationTypeId": 2328250,
+                        "name": "44.08 Výška sedadla umožňující řidiči v poloze vsedě mít současně obě nohy nazemi a udržovat motocykl v rovnováze při zastavení a stání",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328435,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328733,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328435,
+                        "sourceCode": "44.08",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328531,
+                    "code": "20.05",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "20.05 Sklopený brzdový pedál",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328708,
+                        "designationTypeId": 2328250,
+                        "name": "20.05 Sklopený brzdový pedál",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328531,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328841,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328531,
+                        "sourceCode": "20.05",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328484,
+                    "code": "31.02",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "31.02 Pedály ve stejné (nebo téměř stejné) úrovni",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328621,
+                        "designationTypeId": 2328250,
+                        "name": "31.02 Pedály ve stejné (nebo téměř stejné) úrovni",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328484,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328772,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328484,
+                        "sourceCode": "31.02",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328436,
+                    "code": "44.04",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "44.04 Přizpůsobená rukojeť akcelerátoru",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328575,
+                        "designationTypeId": 2328250,
+                        "name": "44.04 Přizpůsobená rukojeť akcelerátoru",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328436,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328740,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328436,
+                        "sourceCode": "44.04",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328493,
+                    "code": "33.02",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "33.02 Akcelerátor, provozní brzda a řízení jako kombinovaný systém ovládaný vnějšísilou oběma rukama",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328628,
+                        "designationTypeId": 2328250,
+                        "name": "33.02 Akcelerátor, provozní brzda a řízení jako kombinovaný systém ovládaný vnějšísilou oběma rukama",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328493,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328779,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328493,
+                        "sourceCode": "33.02",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328542,
+                    "code": "20.13",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "20.13 Ovládání brzdy kolenem",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328720,
+                        "designationTypeId": 2328250,
+                        "name": "20.13 Ovládání brzdy kolenem",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328542,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328853,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328542,
+                        "sourceCode": "20.13",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328534,
+                    "code": "20.01",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "20.01 Přizpůsobený brzdový pedál",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328713,
+                        "designationTypeId": 2328250,
+                        "name": "20.01 Přizpůsobený brzdový pedál",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328534,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328846,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328534,
+                        "sourceCode": "20.01",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328539,
+                    "code": "25.03",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "25.03 Sklopený pedál akcelerátoru",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328716,
+                        "designationTypeId": 2328250,
+                        "name": "25.03 Sklopený pedál akcelerátoru",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328539,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328849,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328539,
+                        "sourceCode": "25.03",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328508,
+                    "code": "43.03",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "43.03 Sedadlo řidiče s postranní opěrou pro dobrou stabilitu",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328645,
+                        "designationTypeId": 2328250,
+                        "name": "43.03 Sedadlo řidiče s postranní opěrou pro dobrou stabilitu",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328508,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328796,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328508,
+                        "sourceCode": "43.03",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328432,
+                    "code": "43.07",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "43.07 Typ bezpečnostního pásu s podporou pro dobrou stabilitu",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328571,
+                        "designationTypeId": 2328250,
+                        "name": "43.07 Typ bezpečnostního pásu s podporou pro dobrou stabilitu",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328432,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328736,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328432,
+                        "sourceCode": "43.07",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "code": "32.01 ",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": []
+                },
+                "display": {
+                    "name": "32.01 Akcelerátor a provozní brzda jako kombinovaný systém ovládaný jednourukou",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328506,
+                    "code": "40.15",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "40.15 Alternativně přizpůsobený systém řízení vozidla ovládaný dvěma rukama/pažemi",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328639,
+                        "designationTypeId": 2328250,
+                        "name": "40.15 Alternativně přizpůsobený systém řízení vozidla ovládaný dvěma rukama/pažemi",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328506,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328790,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328506,
+                        "sourceCode": "40.15",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328444,
+                    "code": "47",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "47. Pouze pro vozidla s více než dvěma koly, u kterých řidič nemusí pro rozjetí, zastavení a stání udržovat rovnováhu",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328583,
+                        "designationTypeId": 2328250,
+                        "name": "47. Pouze pro vozidla s více než dvěma koly, u kterých řidič nemusí pro rozjetí, zastavení a stání udržovat rovnováhu",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328444,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328748,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328444,
+                        "sourceCode": "47",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328512,
+                    "code": "03.01",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "03.01 Protéza/ortéza horní končetiny",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328695,
+                        "designationTypeId": 2328250,
+                        "name": "03.01 Protéza/ortéza horní končetiny",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328512,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328828,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328512,
+                        "sourceCode": "03.01",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328509,
+                    "code": "43.02",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "43.02 Anatomicky přizpůsobené sedadlo řidiče",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328644,
+                        "designationTypeId": 2328250,
+                        "name": "43.02 Anatomicky přizpůsobené sedadlo řidiče",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328509,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328795,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328509,
+                        "sourceCode": "43.02",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328438,
+                    "code": "45",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "45. Motocykl pouze s postranním vozíkem",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328573,
+                        "designationTypeId": 2328250,
+                        "name": "45. Motocykl pouze s postranním vozíkem",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328438,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328738,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328438,
+                        "sourceCode": "45",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328511,
+                    "code": "03.02",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "03.02 Protéza/ortéza dolní končetiny",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328642,
+                        "designationTypeId": 2328250,
+                        "name": "03.02 Protéza/ortéza dolní končetiny",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328511,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328793,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328511,
+                        "sourceCode": "03.02",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328445,
+                    "code": "46",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "46. Pouze pro tříkolová motorová vozidla",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328582,
+                        "designationTypeId": 2328250,
+                        "name": "46. Pouze pro tříkolová motorová vozidla",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328445,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328747,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328445,
+                        "sourceCode": "46",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328513,
+                    "code": "02",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "02. Sluchové pomůcky/komunikační pomůcky",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328694,
+                        "designationTypeId": 2328250,
+                        "name": "02. Sluchové pomůcky/komunikační pomůcky",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328513,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328827,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328513,
+                        "sourceCode": "02",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328500,
+                    "code": "40.11",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "40.11 Pomocná zařízení na volantu",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328637,
+                        "designationTypeId": 2328250,
+                        "name": "40.11 Pomocná zařízení na volantu",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328500,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328788,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328500,
+                        "sourceCode": "40.11",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328434,
+                    "code": "44.09",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "44.09 Maximální ovládací síla brzdy předního kola... N [například 44.09 (140 N)]",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328569,
+                        "designationTypeId": 2328250,
+                        "name": "44.09 Maximální ovládací síla brzdy předního kola... N [například \"44.09 (140 N)\"]",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328434,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328734,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328434,
+                        "sourceCode": "44.09",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328498,
+                    "code": "35.04",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "35.04 Ovladače ovladatelné pravou rukou bez puštění zařízení pro řízení vozidla",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328631,
+                        "designationTypeId": 2328250,
+                        "name": "35.04 Ovladače ovladatelné pravou rukou bez puštění zařízení pro řízení vozidla",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328498,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328782,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328498,
+                        "sourceCode": "35.04",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328532,
+                    "code": "20.04",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "20.04 Posuvný brzdový pedál",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328715,
+                        "designationTypeId": 2328250,
+                        "name": "20.04 Posuvný brzdový pedál",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328532,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328848,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328532,
+                        "sourceCode": "20.04",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328494,
+                    "code": "33.01",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "33.01 Akcelerátor, provozní brzda a řízení jako kombinovaný systém ovládaný vnějšísilou jednou rukou",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328627,
+                        "designationTypeId": 2328250,
+                        "name": "33.01 Akcelerátor, provozní brzda a řízení jako kombinovaný systém ovládaný vnějšísilou jednou rukou",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328494,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328778,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328494,
+                        "sourceCode": "33.01",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328535,
+                    "code": "20.12",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "20.12 Opatření proti zablokování nebo aktivaci brzdového pedálu",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328712,
+                        "designationTypeId": 2328250,
+                        "name": "20.12 Opatření proti zablokování nebo aktivaci brzdového pedálu",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328535,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328845,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328535,
+                        "sourceCode": "20.12",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328431,
+                    "code": "44.01",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "44.01 Samostatně ovládaná brzda",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328563,
+                        "designationTypeId": 2328250,
+                        "name": "44.01 Samostatně ovládaná brzda",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328431,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328730,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328431,
+                        "sourceCode": "44.01",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328485,
+                    "code": "31.01",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "31.01 Další sada paralelních pedálů",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328620,
+                        "designationTypeId": 2328250,
+                        "name": "31.01 Další sada paralelních pedálů",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328485,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328771,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328485,
+                        "sourceCode": "31.01",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328538,
+                    "code": "20.06",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "20.06 Ručně ovládaná provozní brzda",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328717,
+                        "designationTypeId": 2328250,
+                        "name": "20.06 Ručně ovládaná provozní brzda",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328538,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328850,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328538,
+                        "sourceCode": "20.06",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328480,
+                    "code": "25.06",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "25.06 Ovládání akcelerátoru s podporou vnější síly",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328617,
+                        "designationTypeId": 2328250,
+                        "name": "25.06 Ovládání akcelerátoru s podporou vnější síly",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328480,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328768,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328480,
+                        "sourceCode": "25.06",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328433,
+                    "code": "43.06",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "43.06 Přizpůsobení bezpečnostního pásu",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328570,
+                        "designationTypeId": 2328250,
+                        "name": "43.06 Přizpůsobení bezpečnostního pásu",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328433,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328735,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328433,
+                        "sourceCode": "43.06",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328443,
+                    "code": "50",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "50. Omezení na určité vozidlo/číslo podvozku (identifikační číslo vozidla, VIN)",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328576,
+                        "designationTypeId": 2328250,
+                        "name": "50. Omezení na určité vozidlo/číslo podvozku (identifikační číslo vozidla, VIN)",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328443,
+                        "designationType": "display",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328741,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328428,
+                        "sourceId": 2328443,
+                        "sourceCode": "50",
+                        "targetCode": "seznam_harmonizovane_kody_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            }
+        ],
+        "createdAt": "2025-12-20T12:42:34.163503Z",
+        "createdBy": "jan.mikolaj"
+    }
+}

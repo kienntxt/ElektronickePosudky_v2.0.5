@@ -16,13 +16,16 @@ namespace ElektronickePosudky.Tests.Unit
             var handler = new GetCiselnikPolozkyHandler(context, TestHelpers.CreateMapper());
 
             var result = await handler.Handle(
-                new GetCiselnikPolozkyQuery { Kod = "STAV-RO" },
+                new GetCiselnikPolozkyQuery { Kod = "stav-posudku" },
                 System.Threading.CancellationToken.None
             );
 
             result.Should().NotBeNull();
             result.Should().HaveCountGreaterThanOrEqualTo(1);
-            result.Select(x => x.Kod).Should().Contain(new[] { "PLATNY", "ZNEPLATNENY" });
+            result
+                .Select(x => x.Kod)
+                .Should()
+                .Contain(["stav_posudku_1", "stav_posudku_2", "stav_posudku_3"]);
         }
     }
 }

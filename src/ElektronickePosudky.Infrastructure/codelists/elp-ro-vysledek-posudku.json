@@ -1,0 +1,216 @@
+﻿{
+    "id": 2328883,
+    "valueSet": "elp-ro-vysledek-posudku",
+    "version": "1.0.0",
+    "preferredLanguage": "cs",
+    "status": "active",
+    "releaseDate": "2025-12-18",
+    "created": "2025-12-20T12:42:09.396211Z",
+    "algorithm": "semver",
+    "ruleSet": {
+        "id": 2328884,
+        "inactive": false,
+        "rules": [
+            {
+                "id": 2328885,
+                "type": "include",
+                "codeSystem": "elp-ro",
+                "codeSystemVersion": {
+                    "id": 2328252,
+                    "version": "1.0.0"
+                },
+                "filters": [
+                    {
+                        "property": {
+                            "name": "code"
+                        },
+                        "operator": "regex",
+                        "value": "vysledek_posudku_ro_.*"
+                    }
+                ],
+                "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro"
+            }
+        ]
+    },
+    "snapshot": {
+        "id": 66,
+        "valueSet": "elp-ro-vysledek-posudku",
+        "valueSetVersion": {
+            "id": 2328883,
+            "version": "1.0.0"
+        },
+        "conceptsTotal": 3,
+        "expansion": [
+            {
+                "concept": {
+                    "conceptVersionId": 2328470,
+                    "code": "vysledek_posudku_ro_1",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328678,
+                    "designationTypeId": 2328250,
+                    "name": "způsobilý",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328470,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328679,
+                        "designationTypeId": 2328251,
+                        "name": "Zdravotní způsobilost k řízení motorových vozidel.",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328470,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328814,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328471,
+                        "sourceId": 2328470,
+                        "sourceCode": "vysledek_posudku_ro_1",
+                        "targetCode": "vysledek_posudku_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328475,
+                    "code": "vysledek_posudku_ro_2",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328682,
+                    "designationTypeId": 2328250,
+                    "name": "nezpůsobilý",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328475,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328683,
+                        "designationTypeId": 2328251,
+                        "name": "Zdravotní nezpůsobilost k řízení motorových vozidel.",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328475,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328817,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328471,
+                        "sourceId": 2328475,
+                        "sourceCode": "vysledek_posudku_ro_2",
+                        "targetCode": "vysledek_posudku_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328474,
+                    "code": "vysledek_posudku_ro_3",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328684,
+                    "designationTypeId": 2328250,
+                    "name": "způsobilý s podmínkou",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328474,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328685,
+                        "designationTypeId": 2328251,
+                        "name": "Zdravotní způsobilost k řízení motorových vozidel s podmínkou.",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328474,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328818,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328471,
+                        "sourceId": 2328474,
+                        "sourceCode": "vysledek_posudku_ro_3",
+                        "targetCode": "vysledek_posudku_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            }
+        ],
+        "createdAt": "2025-12-20T12:42:09.409089Z",
+        "createdBy": "service-account-termx-service"
+    }
+}

@@ -1,0 +1,160 @@
+﻿{
+    "id": 2328886,
+    "valueSet": "elp-ro-zadatel-skupina",
+    "version": "1.0.0",
+    "preferredLanguage": "cs",
+    "status": "active",
+    "releaseDate": "2025-12-18",
+    "created": "2025-12-20T12:42:09.53798Z",
+    "algorithm": "semver",
+    "ruleSet": {
+        "id": 2328887,
+        "inactive": false,
+        "rules": [
+            {
+                "id": 2328888,
+                "type": "include",
+                "codeSystem": "elp-ro",
+                "codeSystemVersion": {
+                    "id": 2328252,
+                    "version": "1.0.0"
+                },
+                "filters": [
+                    {
+                        "property": {
+                            "name": "code"
+                        },
+                        "operator": "regex",
+                        "value": "skupina_ro_.*"
+                    }
+                ],
+                "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro"
+            }
+        ]
+    },
+    "snapshot": {
+        "id": 67,
+        "valueSet": "elp-ro-zadatel-skupina",
+        "valueSetVersion": {
+            "id": 2328886,
+            "version": "1.0.0"
+        },
+        "conceptsTotal": 2,
+        "expansion": [
+            {
+                "concept": {
+                    "conceptVersionId": 2328465,
+                    "code": "skupina_ro_1",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328673,
+                    "designationTypeId": 2328250,
+                    "name": "skupina 1",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328465,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328674,
+                        "designationTypeId": 2328251,
+                        "name": "Žadatelé a držitelé řidičských oprávnění definovaných vyhláškou 277/2004 Sb.",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328465,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328812,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328463,
+                        "sourceId": 2328465,
+                        "sourceCode": "skupina_ro_1",
+                        "targetCode": "skupina_zadatel_ridic_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328464,
+                    "code": "skupina_ro_2",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328675,
+                    "designationTypeId": 2328250,
+                    "name": "skupina 2",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328464,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328676,
+                        "designationTypeId": 2328251,
+                        "name": "Žadatelé a držitelé řidičských oprávnění definovaných vyhláškou 277/2004 Sb.",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328464,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328813,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328463,
+                        "sourceId": 2328464,
+                        "sourceCode": "skupina_ro_2",
+                        "targetCode": "skupina_zadatel_ridic_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            }
+        ],
+        "createdAt": "2025-12-20T12:42:09.5547Z",
+        "createdBy": "service-account-termx-service"
+    }
+}

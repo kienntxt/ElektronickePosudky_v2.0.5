@@ -17,24 +17,26 @@ namespace ElektronickePosudky.Tests.Unit
 
             var patient = await context.Pacienti.FirstAsync();
             var doctor = await context.ZdravotnickyPracovnici.FirstAsync();
-            var platnyItem = await context.CiselnikPolozky.FirstAsync(x => x.Kod == "PLATNY");
+            var platnyItem = await context.CiselnikPolozky.FirstAsync(x =>
+                x.Kod == "stav_posudku_1"
+            );
             var zneplatnenyItem = await context.CiselnikPolozky.FirstAsync(x =>
-                x.Kod == "ZNEPLATNENY"
+                x.Kod == "stav_posudku_3"
             );
             var typAkce = await context.CiselnikPolozky.FirstAsync(x =>
-                x.CiselnikKod == "TYP-AKCE"
+                x.CiselnikKod == "akce-ro" //invalidate
             );
             var druhProhlidky = await context.CiselnikPolozky.FirstAsync(x =>
-                x.CiselnikKod == "DRUH-PROHLIDKY"
+                x.CiselnikKod == "druh-prohlidky-ro"
             );
             var druhPosudku = await context.CiselnikPolozky.FirstAsync(x =>
-                x.CiselnikKod == "DRUH-POSUDKU"
+                x.CiselnikKod == "druh-posudku-ro"
             );
             var vysledek = await context.CiselnikPolozky.FirstAsync(x =>
-                x.CiselnikKod == "VYSLEDEK"
+                x.CiselnikKod == "vysledek-posudku-ro"
             );
             var skupinaZadatele = await context.CiselnikPolozky.FirstAsync(x =>
-                x.CiselnikKod == "SKUPINA-ZADATELE-RIDIC"
+                x.CiselnikKod == "skupina-zadatel-ridic-ro"
             );
 
             var certificate = new PosudekRo
@@ -79,7 +81,7 @@ namespace ElektronickePosudky.Tests.Unit
             result.Should().NotBeNull();
             result.Id.Should().Be(certificate.Id);
             result.StavPosudku.Should().NotBeNull();
-            result.StavPosudku!.PolozkaKod.Should().Be("ZNEPLATNENY");
+            result.StavPosudku!.PolozkaKod.Should().Be("stav_posudku_3");
             result.VerzeZaznamu.Should().NotBeNull();
 
             var historyExists = await context.PosudekRoHistories.AnyAsync(x =>

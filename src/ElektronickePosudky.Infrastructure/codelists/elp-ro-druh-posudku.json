@@ -1,0 +1,328 @@
+﻿{
+    "id": 2328862,
+    "valueSet": "elp-ro-druh-posudku",
+    "version": "1.0.0",
+    "preferredLanguage": "cs",
+    "status": "active",
+    "releaseDate": "2025-12-18",
+    "created": "2025-12-20T12:42:08.000584Z",
+    "algorithm": "semver",
+    "ruleSet": {
+        "id": 2328863,
+        "inactive": false,
+        "rules": [
+            {
+                "id": 2328864,
+                "type": "include",
+                "codeSystem": "elp-ro",
+                "codeSystemVersion": {
+                    "id": 2328252,
+                    "version": "1.0.0"
+                },
+                "filters": [
+                    {
+                        "property": {
+                            "name": "code"
+                        },
+                        "operator": "regex",
+                        "value": "druh_posudku_ro_.*"
+                    }
+                ],
+                "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro"
+            }
+        ]
+    },
+    "snapshot": {
+        "id": 59,
+        "valueSet": "elp-ro-druh-posudku",
+        "valueSetVersion": {
+            "id": 2328862,
+            "version": "1.0.0"
+        },
+        "conceptsTotal": 5,
+        "expansion": [
+            {
+                "concept": {
+                    "conceptVersionId": 2328415,
+                    "code": "druh_posudku_ro_2",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328606,
+                    "designationTypeId": 2328250,
+                    "name": "rozšíření řidičského oprávnění",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328415,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328607,
+                        "designationTypeId": 2328251,
+                        "name": "Rozšíření řidičského oprávnění.",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328415,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328761,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328417,
+                        "sourceId": 2328415,
+                        "sourceCode": "druh_posudku_ro_2",
+                        "targetCode": "druh_posudku_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328416,
+                    "code": "druh_posudku_ro_1",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328547,
+                    "designationTypeId": 2328250,
+                    "name": "prvořidič",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328416,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328548,
+                        "designationTypeId": 2328251,
+                        "name": "Vydání řidičského oprávnění (prvořidič).",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328416,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328724,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328417,
+                        "sourceId": 2328416,
+                        "sourceCode": "druh_posudku_ro_1",
+                        "targetCode": "druh_posudku_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328421,
+                    "code": "druh_posudku_ro_4",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328552,
+                    "designationTypeId": 2328250,
+                    "name": "senioři",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328421,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328553,
+                        "designationTypeId": 2328251,
+                        "name": "Řidičské oprávnění pro seniory.",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328421,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328726,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328417,
+                        "sourceId": 2328421,
+                        "sourceCode": "druh_posudku_ro_4",
+                        "targetCode": "druh_posudku_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328414,
+                    "code": "druh_posudku_ro_3",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328608,
+                    "designationTypeId": 2328250,
+                    "name": "prodloužení řidičského oprávnění",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328414,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328609,
+                        "designationTypeId": 2328251,
+                        "name": "Prodloužení řidičského oprávnění.",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328414,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328762,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328417,
+                        "sourceId": 2328414,
+                        "sourceCode": "druh_posudku_ro_3",
+                        "targetCode": "druh_posudku_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328420,
+                    "code": "druh_posudku_ro_5",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328554,
+                    "designationTypeId": 2328250,
+                    "name": "přezkoumání způsobilosti",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328420,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328555,
+                        "designationTypeId": 2328251,
+                        "name": "Přezkoumání způsobilosti.",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328420,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328727,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328417,
+                        "sourceId": 2328420,
+                        "sourceCode": "druh_posudku_ro_5",
+                        "targetCode": "druh_posudku_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            }
+        ],
+        "createdAt": "2025-12-20T12:42:08.023642Z",
+        "createdBy": "service-account-termx-service"
+    }
+}
