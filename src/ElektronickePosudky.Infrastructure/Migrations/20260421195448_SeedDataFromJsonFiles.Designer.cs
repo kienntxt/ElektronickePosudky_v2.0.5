@@ -4,6 +4,7 @@ using ElektronickePosudky.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElektronickePosudky.Infrastructure.Migrations
 {
     [DbContext(typeof(ElektronickePosudkyContext))]
-    partial class ElektronickePosudkyContextModelSnapshot : ModelSnapshot
+    [Migration("20260421195448_SeedDataFromJsonFiles")]
+    partial class SeedDataFromJsonFiles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

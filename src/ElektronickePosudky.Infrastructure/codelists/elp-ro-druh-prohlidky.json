@@ -1,0 +1,216 @@
+﻿{
+    "id": 2328865,
+    "valueSet": "elp-ro-druh-prohlidky",
+    "version": "1.0.0",
+    "preferredLanguage": "cs",
+    "status": "active",
+    "releaseDate": "2025-12-18",
+    "created": "2025-12-20T12:42:08.177829Z",
+    "algorithm": "semver",
+    "ruleSet": {
+        "id": 2328866,
+        "inactive": false,
+        "rules": [
+            {
+                "id": 2328867,
+                "type": "include",
+                "codeSystem": "elp-ro",
+                "codeSystemVersion": {
+                    "id": 2328252,
+                    "version": "1.0.0"
+                },
+                "filters": [
+                    {
+                        "property": {
+                            "name": "code"
+                        },
+                        "operator": "regex",
+                        "value": "druh_prohlidky_ro_.*"
+                    }
+                ],
+                "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro"
+            }
+        ]
+    },
+    "snapshot": {
+        "id": 60,
+        "valueSet": "elp-ro-druh-prohlidky",
+        "valueSetVersion": {
+            "id": 2328865,
+            "version": "1.0.0"
+        },
+        "conceptsTotal": 3,
+        "expansion": [
+            {
+                "concept": {
+                    "conceptVersionId": 2328424,
+                    "code": "druh_prohlidky_ro_3",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328561,
+                    "designationTypeId": 2328250,
+                    "name": "mimořádná",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328424,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328562,
+                        "designationTypeId": 2328251,
+                        "name": "Mimořádná lékařská prohlídka.",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328424,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328729,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328419,
+                        "sourceId": 2328424,
+                        "sourceCode": "druh_prohlidky_ro_3",
+                        "targetCode": "druh_prohlidky_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328425,
+                    "code": "druh_prohlidky_ro_2",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328559,
+                    "designationTypeId": 2328250,
+                    "name": "pravidelná",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328425,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328560,
+                        "designationTypeId": 2328251,
+                        "name": "Pravidelná lékařská prohlídka.",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328425,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328728,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328419,
+                        "sourceId": 2328425,
+                        "sourceCode": "druh_prohlidky_ro_2",
+                        "targetCode": "druh_prohlidky_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328418,
+                    "code": "druh_prohlidky_ro_1",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328544,
+                    "designationTypeId": 2328250,
+                    "name": "vstupní",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328418,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328545,
+                        "designationTypeId": 2328251,
+                        "name": "Vstupní lékařská prohlídka.",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328418,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328723,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328419,
+                        "sourceId": 2328418,
+                        "sourceCode": "druh_prohlidky_ro_1",
+                        "targetCode": "druh_prohlidky_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            }
+        ],
+        "createdAt": "2025-12-20T12:42:08.205619Z",
+        "createdBy": "service-account-termx-service"
+    }
+}

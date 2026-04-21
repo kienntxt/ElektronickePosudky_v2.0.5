@@ -1,0 +1,174 @@
+﻿{
+    "id": 2328877,
+    "valueSet": "elp-ro-stav-posudku",
+    "version": "1.0.0",
+    "preferredLanguage": "cs",
+    "status": "active",
+    "releaseDate": "2025-12-18",
+    "created": "2025-12-20T12:42:09.110153Z",
+    "algorithm": "semver",
+    "ruleSet": {
+        "id": 2328878,
+        "inactive": false,
+        "rules": [
+            {
+                "id": 2328879,
+                "type": "include",
+                "codeSystem": "elp-ro",
+                "codeSystemVersion": {
+                    "id": 2328252,
+                    "version": "1.0.0"
+                },
+                "filters": [
+                    {
+                        "property": {
+                            "name": "code"
+                        },
+                        "operator": "regex",
+                        "value": "stav_posudku_.*"
+                    }
+                ],
+                "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro"
+            }
+        ]
+    },
+    "snapshot": {
+        "id": 64,
+        "valueSet": "elp-ro-stav-posudku",
+        "valueSetVersion": {
+            "id": 2328877,
+            "version": "1.0.0"
+        },
+        "conceptsTotal": 3,
+        "expansion": [
+            {
+                "concept": {
+                    "conceptVersionId": 2328469,
+                    "code": "stav_posudku_1",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328680,
+                    "designationTypeId": 2328250,
+                    "name": "platný",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328469,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328815,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328462,
+                        "sourceId": 2328469,
+                        "sourceCode": "stav_posudku_1",
+                        "targetCode": "stav_posudku",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328467,
+                    "code": "stav_posudku_3",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328671,
+                    "designationTypeId": 2328250,
+                    "name": "zneplatněný",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328467,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328811,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328462,
+                        "sourceId": 2328467,
+                        "sourceCode": "stav_posudku_3",
+                        "targetCode": "stav_posudku",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328468,
+                    "code": "stav_posudku_2",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "id": 2328681,
+                    "designationTypeId": 2328250,
+                    "name": "neplatný",
+                    "language": "cs",
+                    "preferred": true,
+                    "caseSignificance": "ci",
+                    "designationKind": "text",
+                    "status": "active",
+                    "codeSystemEntityVersionId": 2328468,
+                    "designationType": "display",
+                    "supplement": false
+                },
+                "additionalDesignations": [],
+                "enumerated": false,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328816,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328462,
+                        "sourceId": 2328468,
+                        "sourceCode": "stav_posudku_2",
+                        "targetCode": "stav_posudku",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            }
+        ],
+        "createdAt": "2025-12-20T12:42:09.127625Z",
+        "createdBy": "service-account-termx-service"
+    }
+}

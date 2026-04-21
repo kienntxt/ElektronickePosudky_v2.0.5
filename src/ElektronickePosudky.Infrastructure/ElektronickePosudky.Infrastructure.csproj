@@ -15,4 +15,9 @@
     <ProjectReference Include="..\ElektronickePosudky.Application\ElektronickePosudky.Application.csproj" />
     <ProjectReference Include="..\ElektronickePosudky.Domain\ElektronickePosudky.Domain.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="codelists\*.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

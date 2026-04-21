@@ -1,0 +1,1209 @@
+﻿{
+    "id": 2328874,
+    "valueSet": "elp-ro-seznam-skupin",
+    "version": "1.0.0",
+    "preferredLanguage": "cs",
+    "status": "active",
+    "releaseDate": "2025-12-18",
+    "created": "2025-12-20T12:42:08.920605Z",
+    "algorithm": "semver",
+    "ruleSet": {
+        "id": 2328875,
+        "inactive": false,
+        "rules": [
+            {
+                "id": 2328876,
+                "type": "include",
+                "codeSystem": "elp-ro",
+                "codeSystemVersion": {
+                    "id": 2328252,
+                    "version": "1.0.0"
+                },
+                "concepts": [
+                    {
+                        "concept": {
+                            "code": "A"
+                        },
+                        "display": {
+                            "name": "skupina A",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "A1"
+                        },
+                        "display": {
+                            "name": "skupina A1",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "A2"
+                        },
+                        "display": {
+                            "name": "skupina A2",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "AM"
+                        },
+                        "display": {
+                            "name": "skupina AM",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "B"
+                        },
+                        "display": {
+                            "name": "skupina B",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "B1"
+                        },
+                        "display": {
+                            "name": "skupina B1",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "BE"
+                        },
+                        "display": {
+                            "name": "skupina BE",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "C"
+                        },
+                        "display": {
+                            "name": "skupina C",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "C1"
+                        },
+                        "display": {
+                            "name": "skupina C1",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "C1E"
+                        },
+                        "display": {
+                            "name": "skupina C1E",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "CE"
+                        },
+                        "display": {
+                            "name": "skupina CE",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "D"
+                        },
+                        "display": {
+                            "name": "skupina D",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "D1"
+                        },
+                        "display": {
+                            "name": "skupina D1",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "D1E"
+                        },
+                        "display": {
+                            "name": "skupina D1E",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "DE"
+                        },
+                        "display": {
+                            "name": "skupina DE",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    },
+                    {
+                        "concept": {
+                            "code": "T"
+                        },
+                        "display": {
+                            "name": "skupina T",
+                            "preferred": false,
+                            "supplement": false
+                        },
+                        "enumerated": false,
+                        "active": false
+                    }
+                ],
+                "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro"
+            }
+        ]
+    },
+    "snapshot": {
+        "id": 63,
+        "valueSet": "elp-ro-seznam-skupin",
+        "valueSetVersion": {
+            "id": 2328874,
+            "version": "1.0.0"
+        },
+        "conceptsTotal": 16,
+        "expansion": [
+            {
+                "concept": {
+                    "conceptVersionId": 2328454,
+                    "code": "B",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina B",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328653,
+                        "designationTypeId": 2328250,
+                        "name": "B",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328454,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328654,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina B",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328454,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328802,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328454,
+                        "sourceCode": "B",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328450,
+                    "code": "A",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina A",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328647,
+                        "designationTypeId": 2328250,
+                        "name": "A",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328450,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328648,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina A",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328450,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328798,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328450,
+                        "sourceCode": "A",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328399,
+                    "code": "D",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina D",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328584,
+                        "designationTypeId": 2328250,
+                        "name": "D",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328399,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328585,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina D",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328399,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328749,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328399,
+                        "sourceCode": "D",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328460,
+                    "code": "BE",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina BE",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328669,
+                        "designationTypeId": 2328250,
+                        "name": "BE",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328460,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328670,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina BE",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328460,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328810,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328460,
+                        "sourceCode": "BE",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328459,
+                    "code": "C",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina C",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328657,
+                        "designationTypeId": 2328250,
+                        "name": "C",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328459,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328658,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina C",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328459,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328805,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328459,
+                        "sourceCode": "C",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328404,
+                    "code": "DE",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina DE",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328599,
+                        "designationTypeId": 2328250,
+                        "name": "DE",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328404,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328600,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina DE",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328404,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328757,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328404,
+                        "sourceCode": "DE",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328400,
+                    "code": "CE",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina CE",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328592,
+                        "designationTypeId": 2328250,
+                        "name": "CE",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328400,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328593,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina CE",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328400,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328754,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328400,
+                        "sourceCode": "CE",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328398,
+                    "code": "D1",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina D1",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328586,
+                        "designationTypeId": 2328250,
+                        "name": "D1",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328398,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328587,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina D1",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328398,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328750,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328398,
+                        "sourceCode": "D1",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328458,
+                    "code": "C1",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina C1",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328659,
+                        "designationTypeId": 2328250,
+                        "name": "C1",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328458,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328660,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina C1",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328458,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328806,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328458,
+                        "sourceCode": "C1",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328401,
+                    "code": "C1E",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina C1E",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328590,
+                        "designationTypeId": 2328250,
+                        "name": "C1E",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328401,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328591,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina C1E",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328401,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328753,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328401,
+                        "sourceCode": "C1E",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328455,
+                    "code": "AM",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina AM",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328651,
+                        "designationTypeId": 2328250,
+                        "name": "AM",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328455,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328652,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina AM",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328455,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328801,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328455,
+                        "sourceCode": "AM",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328405,
+                    "code": "D1E",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina D1E",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328597,
+                        "designationTypeId": 2328250,
+                        "name": "D1E",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328405,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328598,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina D1E",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328405,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328756,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328405,
+                        "sourceCode": "D1E",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328407,
+                    "code": "T",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina T",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328594,
+                        "designationTypeId": 2328250,
+                        "name": "T",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328407,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328595,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina T",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328407,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328755,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328407,
+                        "sourceCode": "T",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328456,
+                    "code": "A2",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina A2",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328663,
+                        "designationTypeId": 2328250,
+                        "name": "A2",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328456,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328664,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina A2",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328456,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328808,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328456,
+                        "sourceCode": "A2",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328461,
+                    "code": "B1",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina B1",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328667,
+                        "designationTypeId": 2328250,
+                        "name": "B1",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328461,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328668,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina B1",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328461,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328809,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328461,
+                        "sourceCode": "B1",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            },
+            {
+                "concept": {
+                    "conceptVersionId": 2328457,
+                    "code": "A1",
+                    "codeSystem": "elp-ro",
+                    "codeSystemUri": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+                    "codeSystemVersions": [
+                        "1.0.0"
+                    ]
+                },
+                "display": {
+                    "name": "skupina A1",
+                    "preferred": false,
+                    "supplement": false
+                },
+                "additionalDesignations": [
+                    {
+                        "id": 2328661,
+                        "designationTypeId": 2328250,
+                        "name": "A1",
+                        "language": "cs",
+                        "preferred": true,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328457,
+                        "designationType": "display",
+                        "supplement": false
+                    },
+                    {
+                        "id": 2328662,
+                        "designationTypeId": 2328251,
+                        "name": "Skupina A1",
+                        "language": "cs",
+                        "preferred": false,
+                        "caseSignificance": "ci",
+                        "designationKind": "text",
+                        "status": "active",
+                        "codeSystemEntityVersionId": 2328457,
+                        "designationType": "definition",
+                        "supplement": false
+                    }
+                ],
+                "enumerated": true,
+                "active": true,
+                "status": "active",
+                "associations": [
+                    {
+                        "id": 2328807,
+                        "codeSystem": "elp-ro",
+                        "associationType": "is-a",
+                        "status": "active",
+                        "targetId": 2328426,
+                        "sourceId": 2328457,
+                        "sourceCode": "A1",
+                        "targetCode": "seznam_skupin_ro",
+                        "supplement": false
+                    }
+                ],
+                "propertyValues": []
+            }
+        ],
+        "createdAt": "2025-12-20T12:42:08.966204Z",
+        "createdBy": "service-account-termx-service"
+    }
+}

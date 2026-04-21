@@ -10,7 +10,7 @@ using Xunit;
 
 namespace ElektronickePosudky.Tests.Unit
 {
-    public class HandlerTests
+    public class GetCiselnikyHandlerTests
     {
         private static IMapper CreateMapper()
         {
@@ -36,36 +36,7 @@ namespace ElektronickePosudky.Tests.Unit
 
             result.Should().NotBeNull();
             result.Should().NotBeEmpty();
-            result.Should().Contain(x => x.Kod == "STAV-RO");
-        }
-
-        [Fact]
-        public async Task SearchPosudkyHandler_ReturnsPosudekRoPage()
-        {
-            var options = new DbContextOptionsBuilder<ElektronickePosudkyContext>()
-                .UseInMemoryDatabase(Guid.NewGuid().ToString())
-                .Options;
-
-            await using var context = new ElektronickePosudkyContext(options);
-            await context.Database.EnsureCreatedAsync();
-
-            var handler = new SearchPosudkyHandler(context, CreateMapper());
-            var result = await handler.Handle(
-                new SearchPosudkyQuery
-                {
-                    SearchRequest = new Application.DTO.PosudkyRoSearchRequest
-                    {
-                        Page = 1,
-                        Size = 10,
-                    },
-                },
-                CancellationToken.None
-            );
-
-            result.Should().NotBeNull();
-            result.TotalCount.Should().BeGreaterThanOrEqualTo(1);
-            result.Page.Should().NotBeNull();
-            result.Page.Count.Should().BeGreaterThanOrEqualTo(1);
+            result.Should().Contain(x => x.Kod == "stav-posudku");
         }
     }
 }

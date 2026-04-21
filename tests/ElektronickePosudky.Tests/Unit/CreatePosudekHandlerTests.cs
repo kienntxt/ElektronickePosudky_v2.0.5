@@ -18,7 +18,9 @@ namespace ElektronickePosudky.Tests.Unit
 
             var patient = await context.Pacienti.FirstAsync();
             var doctor = await context.ZdravotnickyPracovnici.FirstAsync();
-            var platnyItem = await context.CiselnikPolozky.FirstAsync(x => x.Kod == "PLATNY");
+            var platnyItem = await context.CiselnikPolozky.FirstAsync(x =>
+                x.Kod == "stav_posudku_1"
+            );
 
             var handler = new CreatePosudekHandler(context, TestHelpers.CreateMapper());
             var command = new CreatePosudekCommand
@@ -29,21 +31,25 @@ namespace ElektronickePosudky.Tests.Unit
                     KrzpId = doctor.KrzpId,
                     DatumVystaveni = System.DateTime.UtcNow.Date,
                     PlatnostDo = System.DateTime.UtcNow.Date.AddYears(1),
-                    TypAkce = new PosudekRoCiselnikPolozkaCreateDto { Kod = "VYDANI", Verze = "1" },
+                    TypAkce = new PosudekRoCiselnikPolozkaCreateDto
+                    {
+                        Kod = "akce_ro_1",
+                        Verze = "1.0.0",
+                    },
                     StavPosudku = new PosudekRoCiselnikPolozkaCreateDto
                     {
-                        Kod = "PLATNY",
-                        Verze = "1",
+                        Kod = "stav_posudku_1",
+                        Verze = "1.0.0",
                     },
                     DruhProhlidky = new PosudekRoCiselnikPolozkaCreateDto
                     {
-                        Kod = "VYCHOZI",
-                        Verze = "1",
+                        Kod = "druh_prohlidky_ro_1",
+                        Verze = "1.0.0",
                     },
                     DruhPosudku = new PosudekRoCiselnikPolozkaCreateDto
                     {
-                        Kod = "RIDICSKY",
-                        Verze = "1",
+                        Kod = "druh_posudku_ro_1",
+                        Verze = "1.0.0",
                     },
                     Zpusobilosti = System.Array.Empty<PosudekRoZpusobilostCreateDto>(),
                 },
@@ -79,21 +85,25 @@ namespace ElektronickePosudky.Tests.Unit
                     Rid = patient.Rid,
                     KrzpId = doctor.KrzpId,
                     DatumVystaveni = System.DateTime.UtcNow.Date,
-                    TypAkce = new PosudekRoCiselnikPolozkaCreateDto { Kod = "VYDANI", Verze = "1" },
+                    TypAkce = new PosudekRoCiselnikPolozkaCreateDto
+                    {
+                        Kod = "akce_ro_1",
+                        Verze = "1.0.0",
+                    },
                     StavPosudku = new PosudekRoCiselnikPolozkaCreateDto
                     {
-                        Kod = "PLATNY",
-                        Verze = "1",
+                        Kod = "stav_posudku_1",
+                        Verze = "1.0.0",
                     },
                     DruhProhlidky = new PosudekRoCiselnikPolozkaCreateDto
                     {
-                        Kod = "VYCHOZI",
-                        Verze = "1",
+                        Kod = "druh_prohlidky_ro_1",
+                        Verze = "1.0.0",
                     },
                     DruhPosudku = new PosudekRoCiselnikPolozkaCreateDto
                     {
-                        Kod = "RIDICSKY",
-                        Verze = "1",
+                        Kod = "druh_posudku_ro_1",
+                        Verze = "1.0.0",
                     },
                     Zpusobilosti = System.Array.Empty<PosudekRoZpusobilostCreateDto>(),
                 },
@@ -121,9 +131,11 @@ namespace ElektronickePosudky.Tests.Unit
 
             var patient = await context.Pacienti.FirstAsync();
             var doctor = await context.ZdravotnickyPracovnici.FirstAsync();
-            var platnyItem = await context.CiselnikPolozky.FirstAsync(x => x.Kod == "PLATNY");
+            var platnyItem = await context.CiselnikPolozky.FirstAsync(x =>
+                x.Kod == "stav_posudku_1"
+            );
             var vychoziProhlidka = await context.CiselnikPolozky.FirstAsync(x =>
-                x.Kod == "VYCHOZI"
+                x.Kod == "druh_prohlidky_ro_1"
             );
 
             var handler = new CreatePosudekHandler(context, TestHelpers.CreateMapper());
@@ -134,21 +146,25 @@ namespace ElektronickePosudky.Tests.Unit
                     Rid = patient.Rid,
                     KrzpId = doctor.KrzpId,
                     DatumVystaveni = System.DateTime.UtcNow.Date,
-                    TypAkce = new PosudekRoCiselnikPolozkaCreateDto { Kod = "VYDANI", Verze = "1" },
+                    TypAkce = new PosudekRoCiselnikPolozkaCreateDto
+                    {
+                        Kod = "akce_ro_1",
+                        Verze = "1.0.0",
+                    },
                     StavPosudku = new PosudekRoCiselnikPolozkaCreateDto
                     {
-                        Kod = "PLATNY",
-                        Verze = "1",
+                        Kod = "stav_posudku_1",
+                        Verze = "1.0.0",
                     },
                     DruhProhlidky = new PosudekRoCiselnikPolozkaCreateDto
                     {
-                        Kod = "VYCHOZI",
-                        Verze = "1",
+                        Kod = "druh_prohlidky_ro_1",
+                        Verze = "1.0.0",
                     },
                     DruhPosudku = new PosudekRoCiselnikPolozkaCreateDto
                     {
-                        Kod = "RIDICSKY",
-                        Verze = "1",
+                        Kod = "druh_posudku_ro_1",
+                        Verze = "1.0.0",
                     },
                     Zpusobilosti = System.Array.Empty<PosudekRoZpusobilostCreateDto>(),
                 },
@@ -157,9 +173,11 @@ namespace ElektronickePosudky.Tests.Unit
             var result = await handler.Handle(command, System.Threading.CancellationToken.None);
 
             result.Hlavicka!.StavPosudku.Should().NotBeNull();
-            result.Hlavicka!.StavPosudku!.PolozkaKod.Should().Be("PLATNY");
+            result.Hlavicka!.StavPosudku!.PolozkaKod.Should().Be("stav_posudku_1");
             result.Hlavicka!.DruhProhlidky.Should().NotBeNull();
-            result.Hlavicka!.DruhProhlidky!.PolozkaKod.Should().Be("VYCHOZI");
+            result.Hlavicka!.DruhProhlidky!.PolozkaKod.Should().Be("druh_prohlidky_ro_1");
+            result.Hlavicka!.DruhPosudku.Should().NotBeNull();
+            result.Hlavicka!.DruhPosudku!.PolozkaKod.Should().Be("druh_posudku_ro_1");
 
             var certificate = await context.PosudekRos.FirstOrDefaultAsync(x =>
                 x.Rid == patient.Rid && x.KrzpId == doctor.KrzpId
@@ -184,21 +202,25 @@ namespace ElektronickePosudky.Tests.Unit
                     Rid = patient.Rid,
                     KrzpId = doctor.KrzpId,
                     DatumVystaveni = System.DateTime.UtcNow.Date,
-                    TypAkce = new PosudekRoCiselnikPolozkaCreateDto { Kod = "VYDANI", Verze = "1" },
+                    TypAkce = new PosudekRoCiselnikPolozkaCreateDto
+                    {
+                        Kod = "akce_ro_1",
+                        Verze = "1.0.0",
+                    },
                     StavPosudku = new PosudekRoCiselnikPolozkaCreateDto
                     {
-                        Kod = "PLATNY",
-                        Verze = "1",
+                        Kod = "stav_posudku_1",
+                        Verze = "1.0.0",
                     },
                     DruhProhlidky = new PosudekRoCiselnikPolozkaCreateDto
                     {
-                        Kod = "VYCHOZI",
-                        Verze = "1",
+                        Kod = "druh_prohlidky_ro_1",
+                        Verze = "1.0.0",
                     },
                     DruhPosudku = new PosudekRoCiselnikPolozkaCreateDto
                     {
-                        Kod = "RIDICSKY",
-                        Verze = "1",
+                        Kod = "druh_posudku_ro_1",
+                        Verze = "1.0.0",
                     },
                     Zpusobilosti = null,
                 },
@@ -226,40 +248,44 @@ namespace ElektronickePosudky.Tests.Unit
                     Rid = patient.Rid,
                     KrzpId = doctor.KrzpId,
                     DatumVystaveni = System.DateTime.UtcNow.Date,
-                    TypAkce = new PosudekRoCiselnikPolozkaCreateDto { Kod = "VYDANI", Verze = "1" },
+                    TypAkce = new PosudekRoCiselnikPolozkaCreateDto
+                    {
+                        Kod = "akce_ro_1",
+                        Verze = "1.0.0",
+                    },
                     StavPosudku = new PosudekRoCiselnikPolozkaCreateDto
                     {
-                        Kod = "PLATNY",
-                        Verze = "1",
+                        Kod = "stav_posudku_1",
+                        Verze = "1.0.0",
                     },
                     DruhProhlidky = new PosudekRoCiselnikPolozkaCreateDto
                     {
-                        Kod = "VYCHOZI",
-                        Verze = "1",
+                        Kod = "druh_prohlidky_ro_1",
+                        Verze = "1.0.0",
                     },
                     DruhPosudku = new PosudekRoCiselnikPolozkaCreateDto
                     {
-                        Kod = "RIDICSKY",
-                        Verze = "1",
+                        Kod = "druh_posudku_ro_1",
+                        Verze = "1.0.0",
                     },
-                    Zpusobilosti = new[]
-                    {
+                    Zpusobilosti =
+                    [
                         new PosudekRoZpusobilostCreateDto
                         {
                             SkupinaZadateleRidic = new PosudekRoCiselnikPolozkaCreateDto
                             {
-                                Kod = "A",
-                                Verze = "1",
+                                Kod = "A1",
+                                Verze = "1.0.0",
                             },
                             Vysledek = new PosudekRoCiselnikPolozkaCreateDto
                             {
-                                Kod = "ZPUSOBILY",
-                                Verze = "1",
+                                Kod = "vysledek_posudku_ro_1",
+                                Verze = "1.0.0",
                             },
                             SkupinyRidicskehoOpravneni =
                                 System.Array.Empty<PosudekRoSkupinaCreateDto>(),
                         },
-                    },
+                    ],
                 },
             };
 
