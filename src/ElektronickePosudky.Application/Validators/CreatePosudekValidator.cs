@@ -1,6 +1,7 @@
 ﻿using ElektronickePosudky.Application.Commands;
 using ElektronickePosudky.Application.Interfaces;
 using FluentValidation;
+using Microsoft.EntityFrameworkCore;
 
 namespace ElektronickePosudky.Application.Validators
 {
@@ -14,11 +15,11 @@ namespace ElektronickePosudky.Application.Validators
             RuleFor(x => x.Posudek).NotNull();
             RuleFor(x => x.Posudek.Rid)
                 .NotEmpty()
-                .Must(x => _context.Pacienti.Any(e => e.Rid == x))
+                .Must(x => _context.Pacienti.AsNoTracking().Any(e => e.Rid == x))
                 .WithMessage(x => $"Not found {x.Posudek.Rid} in the database");
             RuleFor(x => x.Posudek.KrzpId)
                 .NotEmpty()
-                .Must(x => _context.ZdravotnickyPracovnici.Any(e => e.KrzpId == x))
+                .Must(x => _context.ZdravotnickyPracovnici.AsNoTracking().Any(e => e.KrzpId == x))
                 .WithMessage(x => $"Not found {x.Posudek.KrzpId} in the database");
             RuleFor(x => x.Posudek.DatumVystaveni).NotEmpty();
             RuleFor(x => x.Posudek.TypAkce)
